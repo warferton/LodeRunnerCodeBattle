@@ -9,7 +9,7 @@ import java.util.Random;
 
 public class Main {
 
-    private static final String SERVER_ADDRESS = "https://dojorena.io/codenjoy-contest/board/player/dojorena366?code=5032018246377952198";
+    private static final String SERVER_ADDRESS = "http://codingdojo2019.westeurope.cloudapp.azure.com/codenjoy-contest/board/player/kjfserksnckshus?code=3948792673423&gameName=loderunner";
 
     public static void main(String[] args) throws IOException {
         ReconnectableLodeRunnerClientWrapper client = new ReconnectableLodeRunnerClientWrapper(SERVER_ADDRESS, Main::doAction);

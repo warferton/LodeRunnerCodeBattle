@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ru.codebattle.client.bot.trackers.GoldTrackerTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-04-22T20:17:37" hostname="AlexMac.local" time="0.118">
+  <properties/>
+  <testcase name="testSortByCloseness()" classname="ru.codebattle.client.bot.trackers.GoldTrackerTest" time="0.118"/>
+  <system-out><![CDATA[[52,6]
+Seconds elapsed: 0.0
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

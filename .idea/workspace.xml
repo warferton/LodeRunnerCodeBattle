@@ -26,25 +26,56 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="db8eec79-c78b-4951-8f78-b4ab756d2349" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/codebattle/client/bot/PathFinder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/codebattle/client/bot/trackers/EnemyTracker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/codebattle/client/bot/trackers/GoldTracker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/codebattle/client/bot/trackers/PillTracker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ru/codebattle/client/bot/BotTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ru/codebattle/client/bot/trackers/EnemyTrackerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ru/codebattle/client/bot/trackers/GoldTrackerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.8.1/fileContent/fileContent.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8.1/fileContent/fileContent.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.8.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8.1/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.8.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.8.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.8.1/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8.1/taskHistory/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.8.1/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8.1/taskHistory/taskHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/ru/codebattle/client/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/ru/codebattle/client/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/codebattle/client/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/codebattle/client/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/codebattle/client/bot/PathFinder.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
     </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -54,7 +85,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1rWJqieLOFYx9AFEV2KWMmRe1ix" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -63,16 +94,22 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="TERMINAL_CUSTOM_COMMANDS_GOT_IT" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.41379312" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="show.unlinked.gradle.project.popup" value="true" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Gradle.GoldTrackerTest.testSortByCloseness">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ru.codebattle.client.Main" />
       <module name="loderunner-client.main" />
@@ -86,8 +123,68 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="CodeBattleJava [buildDependents]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="buildDependents" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="GoldTrackerTest.testSortByClosenes" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;ru.codebattle.client.bot.trackers.GoldTrackerTest.testSortByClosenes&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="GoldTrackerTest.testSortByCloseness" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;ru.codebattle.client.bot.trackers.GoldTrackerTest.testSortByCloseness&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.GoldTrackerTest.testSortByCloseness" />
+        <item itemvalue="Gradle.CodeBattleJava [buildDependents]" />
+        <item itemvalue="Gradle.GoldTrackerTest.testSortByClosenes" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -118,30 +215,60 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1398" height="433" key="GridCell.Tab.0.bottom" timestamp="1619107243937">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state x="533" y="146" key="#com.intellij.ide.util.MemberChooser" timestamp="1619117350350">
+      <screen x="0" y="25" width="1440" height="804" />
+    </state>
+    <state x="533" y="146" key="#com.intellij.ide.util.MemberChooser/0.25.1440.804@0.25.1440.804" timestamp="1619117350350" />
+    <state width="1398" height="306" key="GridCell.Tab.0.bottom" timestamp="1619122397142">
+      <screen x="0" y="25" width="1440" height="804" />
     </state>
     <state width="1398" height="433" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1619107243937" />
-    <state width="1398" height="433" key="GridCell.Tab.0.center" timestamp="1619107243936">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state width="1398" height="306" key="GridCell.Tab.0.bottom/0.25.1440.804@0.25.1440.804" timestamp="1619122397142" />
+    <state width="1398" height="306" key="GridCell.Tab.0.center" timestamp="1619122397141">
+      <screen x="0" y="25" width="1440" height="804" />
     </state>
     <state width="1398" height="433" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1619107243936" />
-    <state width="1398" height="433" key="GridCell.Tab.0.left" timestamp="1619107243935">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state width="1398" height="306" key="GridCell.Tab.0.center/0.25.1440.804@0.25.1440.804" timestamp="1619122397141" />
+    <state width="1398" height="306" key="GridCell.Tab.0.left" timestamp="1619122397141">
+      <screen x="0" y="25" width="1440" height="804" />
     </state>
     <state width="1398" height="433" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1619107243935" />
-    <state width="1398" height="433" key="GridCell.Tab.0.right" timestamp="1619107243936">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state width="1398" height="306" key="GridCell.Tab.0.left/0.25.1440.804@0.25.1440.804" timestamp="1619122397141" />
+    <state width="1398" height="306" key="GridCell.Tab.0.right" timestamp="1619122397141">
+      <screen x="0" y="25" width="1440" height="804" />
     </state>
     <state width="1398" height="433" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1619107243936" />
-    <state x="208" y="28" key="SettingsEditor" timestamp="1619087114668">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state width="1398" height="306" key="GridCell.Tab.0.right/0.25.1440.804@0.25.1440.804" timestamp="1619122397141" />
+    <state width="1398" height="254" key="GridCell.Tab.1.bottom" timestamp="1619115847442">
+      <screen x="0" y="25" width="1440" height="804" />
+    </state>
+    <state width="1398" height="254" key="GridCell.Tab.1.bottom/0.25.1440.804@0.25.1440.804" timestamp="1619115847442" />
+    <state width="1398" height="254" key="GridCell.Tab.1.center" timestamp="1619115847441">
+      <screen x="0" y="25" width="1440" height="804" />
+    </state>
+    <state width="1398" height="254" key="GridCell.Tab.1.center/0.25.1440.804@0.25.1440.804" timestamp="1619115847441" />
+    <state width="1398" height="254" key="GridCell.Tab.1.left" timestamp="1619115847441">
+      <screen x="0" y="25" width="1440" height="804" />
+    </state>
+    <state width="1398" height="254" key="GridCell.Tab.1.left/0.25.1440.804@0.25.1440.804" timestamp="1619115847441" />
+    <state width="1398" height="254" key="GridCell.Tab.1.right" timestamp="1619115847442">
+      <screen x="0" y="25" width="1440" height="804" />
+    </state>
+    <state width="1398" height="254" key="GridCell.Tab.1.right/0.25.1440.804@0.25.1440.804" timestamp="1619115847442" />
+    <state x="208" y="25" key="SettingsEditor" timestamp="1619121277348">
+      <screen x="0" y="25" width="1440" height="804" />
     </state>
     <state x="208" y="28" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1619087114668" />
-    <state x="511" y="368" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1619107231294">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state x="208" y="25" key="SettingsEditor/0.25.1440.804@0.25.1440.804" timestamp="1619121277348" />
+    <state x="433" y="323" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1619121031307">
+      <screen x="0" y="25" width="1440" height="804" />
+    </state>
+    <state x="433" y="323" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.25.1440.804@0.25.1440.804" timestamp="1619121031307" />
+    <state x="511" y="354" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1619120874613">
+      <screen x="0" y="25" width="1440" height="804" />
     </state>
     <state x="511" y="368" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1440.900@0.0.1440.900" timestamp="1619107231294" />
+    <state x="511" y="354" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.25.1440.804@0.25.1440.804" timestamp="1619120874613" />
     <state x="126" y="46" key="new project wizard" timestamp="1619101588045">
       <screen x="0" y="25" width="1440" height="805" />
     </state>
