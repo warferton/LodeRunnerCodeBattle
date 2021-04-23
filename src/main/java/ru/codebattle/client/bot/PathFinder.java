@@ -16,7 +16,7 @@ public class PathFinder {
     }
 
     public void findPathToGold(){
-        
+
     }
 }
 
