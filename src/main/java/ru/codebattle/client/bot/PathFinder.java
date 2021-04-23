@@ -1,6 +1,7 @@
 package ru.codebattle.client.bot;
 
 import ru.codebattle.client.api.GameBoard;
+import ru.codebattle.client.bot.behaviours.BehaviourController;
 import ru.codebattle.client.bot.trackers.EnemyTracker;
 import ru.codebattle.client.bot.trackers.GoldTracker;
 import ru.codebattle.client.bot.trackers.PillTracker;
@@ -8,7 +9,7 @@ import ru.codebattle.client.bot.trackers.PillTracker;
 public class PathFinder {
     GameBoard gameBoard;
     GoldTracker goldTracker;
-    EnemyTracker enemyTracker;
+    BehaviourController bc;
     PillTracker pillTracker;
 
     public PathFinder(GameBoard gameBoard) {
@@ -23,7 +24,7 @@ public class PathFinder {
   *          V - Done, and tested;
   *          X - Not Done / Needs Work;
   * TODO: GOOD IDEA 1:
-  *       Algo: Greedy Beast-First;
+  *       Path Algorithm: Beam Search( Greedy Best-First );
   *       Desc: get all gold -> sort gold by closeness -> build path to the closest ->
   *             check for enemies:
   *                  (1) if no enemies -> head toward closes gold
@@ -33,8 +34,8 @@ public class PathFinder {
   *                  ----------------------------------------------------------------
   *         Func's needed: (1) SortGoldByCloseness ( V )
   *                        (2) ConstructPath  (X)
-  *                        (3) CheckEnemies   (X)
-  *                        (4) EvasionBehaviour (X)
+  *                        (3) CheckEnemies / EnemyTracker   (V)
+  *                        (4) EvasionBehaviour (?)
   *                  ----------------------------------------------------------------
   * TODO:
   *  Additional Enhancements:

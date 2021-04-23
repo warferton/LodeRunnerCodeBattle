@@ -168,6 +168,13 @@ public class GameBoard {
         return Arrays.stream(elements).anyMatch(element -> hasElementAt(point, element));
     }
 
+    /**
+     * Check if a certain element is in a 3x3 quadrant
+     * with center specified in parameters
+     * @param point quadrant centre;
+     * @param element BoardElement to look for;
+     * @return boolean;
+     */
     public boolean isNearToElement(BoardPoint point, BoardElement element) {
         if (point.isOutOfBoard(size()))
             return false;
@@ -175,7 +182,11 @@ public class GameBoard {
         return hasElementAt(point.shiftBottom(), element)
                 || hasElementAt(point.shiftTop(), element)
                 || hasElementAt(point.shiftLeft(), element)
-                || hasElementAt(point.shiftRight(), element);
+                || hasElementAt(point.shiftRight(), element)
+                || hasElementAt(point.shiftTop().shiftRight(), element)
+                || hasElementAt(point.shiftTop().shiftLeft(), element)
+                || hasElementAt(point.shiftBottom().shiftRight(), element)
+                || hasElementAt(point.shiftBottom().shiftLeft(), element);
     }
 
     public boolean hasEnemyAt(BoardPoint point) {

@@ -3,22 +3,15 @@ package ru.codebattle.client.bot.trackers;
 import ru.codebattle.client.api.BoardPoint;
 import ru.codebattle.client.api.GameBoard;
 
-import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
 public class GoldTracker {
-    GameBoard gameBoard;
     List<BoardPoint> gold_position;
 
-    public GoldTracker(GameBoard gameBoard) {
-        this.gameBoard = gameBoard;
-    }
-
    //get list sorted by closeness to character
-    public List<BoardPoint> getByCloseness(){
-        findAllGold();
-        BoardPoint myCurPos = gameBoard.getMyPosition();
+    public List<BoardPoint> getByCloseness(GameBoard gameBoard, BoardPoint myCurPos){
+        updatePositions(gameBoard);
         gold_position.sort(new Comparator<BoardPoint>() {
             @Override
             public int compare(BoardPoint o1, BoardPoint o2) {
@@ -34,7 +27,7 @@ public class GoldTracker {
     }
 
     //populate the gold pos list
-    public void findAllGold() {
+    private void updatePositions(GameBoard gameBoard) {
         gold_position = gameBoard.getGoldPositions();
     }
 
