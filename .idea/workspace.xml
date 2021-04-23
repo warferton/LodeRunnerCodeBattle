@@ -26,10 +26,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="db8eec79-c78b-4951-8f78-b4ab756d2349" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/codebattle/client/bot/behaviours/BehaviourController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/codebattle/client/bot/behaviours/Behaviours.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ru/codebattle/client/bot/behaviuors/BehaviourControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.8.1/fileContent/fileContent.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8.1/fileContent/fileContent.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.8.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8.1/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.8.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8.1/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.8.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
@@ -37,24 +33,22 @@
       <change beforePath="$PROJECT_DIR$/.gradle/4.8.1/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8.1/taskHistory/taskHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/ru/codebattle/client/api/GameBoard.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/ru/codebattle/client/api/GameBoard.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/ru/codebattle/client/bot/PathFinder.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/ru/codebattle/client/bot/PathFinder.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/ru/codebattle/client/bot/trackers/EnemyTracker.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/ru/codebattle/client/bot/trackers/EnemyTracker.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/ru/codebattle/client/bot/trackers/GoldTracker$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/ru/codebattle/client/bot/trackers/GoldTracker$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/ru/codebattle/client/bot/trackers/GoldTracker.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/ru/codebattle/client/bot/trackers/GoldTracker.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/ru/codebattle/client/bot/behaviuors/BehaviourController.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/test/ru/codebattle/client/bot/trackers/EnemyTrackerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/ru/codebattle/client/bot/trackers/EnemyTrackerTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/test/ru/codebattle/client/bot/trackers/GoldTrackerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/ru/codebattle/client/bot/trackers/GoldTrackerTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/ru.codebattle.client.bot.trackers.GoldTrackerTest.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/ru.codebattle.client.bot.trackers.EnemyTrackerTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/ru.codebattle.client.bot.trackers.EnemyTrackerTest.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/ru.codebattle.client.bot.trackers.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/packages/ru.codebattle.client.bot.trackers.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-ru.codebattle.client.bot.trackers.GoldTrackerTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-ru.codebattle.client.bot.trackers.EnemyTrackerTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-ru.codebattle.client.bot.trackers.EnemyTrackerTest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/codebattle/client/api/GameBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/codebattle/client/api/GameBoard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/codebattle/client/bot/PathFinder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/codebattle/client/bot/PathFinder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/codebattle/client/bot/behaviours/BehaviourController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/codebattle/client/bot/behaviours/BehaviourController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/codebattle/client/bot/trackers/EnemyTracker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/codebattle/client/bot/trackers/EnemyTracker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/codebattle/client/bot/trackers/GoldTracker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/codebattle/client/bot/trackers/GoldTracker.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/ru/codebattle/client/bot/trackers/EnemyTrackerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/codebattle/client/bot/trackers/EnemyTrackerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/codebattle/client/bot/trackers/GoldTrackerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/codebattle/client/bot/trackers/GoldTrackerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,32 +108,13 @@
     <property name="settings.editor.selected.configurable" value="editor.preferences.import" />
     <property name="show.unlinked.gradle.project.popup" value="true" />
   </component>
-  <component name="RunManager" selected="Gradle.EnemyTrackerTest.testGetEnemyInQuadrant">
-    <configuration name="CodeBattleJava [buildDependents]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.EnemyTrackerTest">
+    <configuration name="EnemyTrackerTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="buildDependents" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="EnemyTrackerTest.testGetEnemyInPlate" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;ru.codebattle.client.bot.trackers.EnemyTrackerTest.testGetEnemyInPlate&quot;" />
+        <option name="scriptParameters" value="--tests &quot;ru.codebattle.client.bot.trackers.EnemyTrackerTest&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -172,12 +147,12 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="GoldTrackerTest.testSortByClosenes" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="EnemyTrackerTest.testGetEnemyOnSamePlane" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;ru.codebattle.client.bot.trackers.GoldTrackerTest.testSortByClosenes&quot;" />
+        <option name="scriptParameters" value="--tests &quot;ru.codebattle.client.bot.trackers.EnemyTrackerTest.testGetEnemyOnSamePlane&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -191,12 +166,31 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="GoldTrackerTest.testSortByCloseness" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="EnemyTrackerTest.testGetEnemyPositioning" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;ru.codebattle.client.bot.trackers.GoldTrackerTest.testSortByCloseness&quot;" />
+        <option name="scriptParameters" value="--tests &quot;ru.codebattle.client.bot.trackers.EnemyTrackerTest.testGetEnemyPositioning&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="EnemyTrackerTest.testIsNearestEnemyBehind" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;ru.codebattle.client.bot.trackers.EnemyTrackerTest.testIsNearestEnemyBehind&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -212,11 +206,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.EnemyTrackerTest" />
+        <item itemvalue="Gradle.EnemyTrackerTest.testIsNearestEnemyBehind" />
+        <item itemvalue="Gradle.EnemyTrackerTest.testGetEnemyOnSamePlane" />
+        <item itemvalue="Gradle.EnemyTrackerTest.testGetEnemyPositioning" />
         <item itemvalue="Gradle.EnemyTrackerTest.testGetEnemyInQuadrant" />
-        <item itemvalue="Gradle.EnemyTrackerTest.testGetEnemyInPlate" />
-        <item itemvalue="Gradle.GoldTrackerTest.testSortByCloseness" />
-        <item itemvalue="Gradle.CodeBattleJava [buildDependents]" />
-        <item itemvalue="Gradle.GoldTrackerTest.testSortByClosenes" />
       </list>
     </recent_temporary>
   </component>
@@ -258,46 +252,54 @@
       <screen x="0" y="25" width="1440" height="803" />
     </state>
     <state x="351" y="25" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.25.1440.803@0.25.1440.803" timestamp="1619188877918" />
-    <state width="1398" height="327" key="GridCell.Tab.0.bottom" timestamp="1619188742718">
-      <screen x="0" y="25" width="1440" height="803" />
+    <state width="1398" height="221" key="GridCell.Tab.0.bottom" timestamp="1619200901670">
+      <screen x="0" y="25" width="1440" height="805" />
     </state>
     <state width="1398" height="433" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1619107243937" />
     <state width="1398" height="327" key="GridCell.Tab.0.bottom/0.25.1440.803@0.25.1440.803" timestamp="1619188742718" />
     <state width="1398" height="306" key="GridCell.Tab.0.bottom/0.25.1440.804@0.25.1440.804" timestamp="1619183698917" />
-    <state width="1398" height="327" key="GridCell.Tab.0.center" timestamp="1619188742717">
-      <screen x="0" y="25" width="1440" height="803" />
+    <state width="1398" height="221" key="GridCell.Tab.0.bottom/0.25.1440.805@0.25.1440.805" timestamp="1619200901670" />
+    <state width="1398" height="221" key="GridCell.Tab.0.center" timestamp="1619200901670">
+      <screen x="0" y="25" width="1440" height="805" />
     </state>
     <state width="1398" height="433" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1619107243936" />
     <state width="1398" height="327" key="GridCell.Tab.0.center/0.25.1440.803@0.25.1440.803" timestamp="1619188742717" />
     <state width="1398" height="306" key="GridCell.Tab.0.center/0.25.1440.804@0.25.1440.804" timestamp="1619183698916" />
-    <state width="1398" height="327" key="GridCell.Tab.0.left" timestamp="1619188742717">
-      <screen x="0" y="25" width="1440" height="803" />
+    <state width="1398" height="221" key="GridCell.Tab.0.center/0.25.1440.805@0.25.1440.805" timestamp="1619200901670" />
+    <state width="1398" height="221" key="GridCell.Tab.0.left" timestamp="1619200901669">
+      <screen x="0" y="25" width="1440" height="805" />
     </state>
     <state width="1398" height="433" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1619107243935" />
     <state width="1398" height="327" key="GridCell.Tab.0.left/0.25.1440.803@0.25.1440.803" timestamp="1619188742717" />
     <state width="1398" height="306" key="GridCell.Tab.0.left/0.25.1440.804@0.25.1440.804" timestamp="1619183698915" />
-    <state width="1398" height="327" key="GridCell.Tab.0.right" timestamp="1619188742718">
-      <screen x="0" y="25" width="1440" height="803" />
+    <state width="1398" height="221" key="GridCell.Tab.0.left/0.25.1440.805@0.25.1440.805" timestamp="1619200901669" />
+    <state width="1398" height="221" key="GridCell.Tab.0.right" timestamp="1619200901670">
+      <screen x="0" y="25" width="1440" height="805" />
     </state>
     <state width="1398" height="433" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1619107243936" />
     <state width="1398" height="327" key="GridCell.Tab.0.right/0.25.1440.803@0.25.1440.803" timestamp="1619188742718" />
     <state width="1398" height="306" key="GridCell.Tab.0.right/0.25.1440.804@0.25.1440.804" timestamp="1619183698916" />
-    <state width="1398" height="254" key="GridCell.Tab.1.bottom" timestamp="1619115847442">
-      <screen x="0" y="25" width="1440" height="804" />
+    <state width="1398" height="221" key="GridCell.Tab.0.right/0.25.1440.805@0.25.1440.805" timestamp="1619200901670" />
+    <state width="1398" height="254" key="GridCell.Tab.1.bottom" timestamp="1619200339739">
+      <screen x="0" y="25" width="1440" height="805" />
     </state>
     <state width="1398" height="254" key="GridCell.Tab.1.bottom/0.25.1440.804@0.25.1440.804" timestamp="1619115847442" />
-    <state width="1398" height="254" key="GridCell.Tab.1.center" timestamp="1619115847441">
-      <screen x="0" y="25" width="1440" height="804" />
+    <state width="1398" height="254" key="GridCell.Tab.1.bottom/0.25.1440.805@0.25.1440.805" timestamp="1619200339739" />
+    <state width="1398" height="254" key="GridCell.Tab.1.center" timestamp="1619200339738">
+      <screen x="0" y="25" width="1440" height="805" />
     </state>
     <state width="1398" height="254" key="GridCell.Tab.1.center/0.25.1440.804@0.25.1440.804" timestamp="1619115847441" />
-    <state width="1398" height="254" key="GridCell.Tab.1.left" timestamp="1619115847441">
-      <screen x="0" y="25" width="1440" height="804" />
+    <state width="1398" height="254" key="GridCell.Tab.1.center/0.25.1440.805@0.25.1440.805" timestamp="1619200339738" />
+    <state width="1398" height="254" key="GridCell.Tab.1.left" timestamp="1619200339738">
+      <screen x="0" y="25" width="1440" height="805" />
     </state>
     <state width="1398" height="254" key="GridCell.Tab.1.left/0.25.1440.804@0.25.1440.804" timestamp="1619115847441" />
-    <state width="1398" height="254" key="GridCell.Tab.1.right" timestamp="1619115847442">
-      <screen x="0" y="25" width="1440" height="804" />
+    <state width="1398" height="254" key="GridCell.Tab.1.left/0.25.1440.805@0.25.1440.805" timestamp="1619200339738" />
+    <state width="1398" height="254" key="GridCell.Tab.1.right" timestamp="1619200339739">
+      <screen x="0" y="25" width="1440" height="805" />
     </state>
     <state width="1398" height="254" key="GridCell.Tab.1.right/0.25.1440.804@0.25.1440.804" timestamp="1619115847442" />
+    <state width="1398" height="254" key="GridCell.Tab.1.right/0.25.1440.805@0.25.1440.805" timestamp="1619200339739" />
     <state x="208" y="25" key="SettingsEditor" timestamp="1619182058783">
       <screen x="0" y="25" width="1440" height="804" />
     </state>

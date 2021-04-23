@@ -4,7 +4,6 @@ import ru.codebattle.client.api.BoardPoint;
 import ru.codebattle.client.api.GameBoard;
 
 import java.util.List;
-import java.util.concurrent.atomic.AtomicInteger;
 import java.util.stream.Collectors;
 
 /**
@@ -40,8 +39,8 @@ public class EnemyTracker {
         updatePositions(gameBoard);
         return enemyPositions.stream()
                 .filter(pos ->
-                        Math.abs(myCurPos.getY() - pos.getY()) < y &&
-                        Math.abs(myCurPos.getX() - pos.getX()) < x
+                        Math.abs(myCurPos.getY() - pos.getY()) <= y &&
+                        Math.abs(myCurPos.getX() - pos.getX()) <= x
                 )
                 .collect(Collectors.toList());
 
@@ -58,7 +57,7 @@ public class EnemyTracker {
      * <br/>
      * 2 - if sandwiched
      */
-    public int enemyPositioning(List<BoardPoint> enemyPos, BoardPoint myCurPos){
+    public int getEnemyPositioning(List<BoardPoint> enemyPos, BoardPoint myCurPos){
        boolean enemy_behind = enemyPos.stream().anyMatch(pos -> pos.getX() < myCurPos.getX());
        boolean enemy_infront = enemyPos.stream().anyMatch(pos -> pos.getX() > myCurPos.getX());
        if (enemy_behind && enemy_infront)
@@ -72,17 +71,25 @@ public class EnemyTracker {
 
     // Checks if enemy behind is the nearest one
     public boolean isNearestEnemyBehind(List<BoardPoint> enemyPos, BoardPoint myCurPos){
-        AtomicInteger enemy_front_distance = new AtomicInteger(5);
-        AtomicInteger enemy_behind_distance = new AtomicInteger(5);
-        enemyPos.stream().peek(pos -> {
-            if(pos.getX() < myCurPos.getX())
-                enemy_behind_distance.set(Math.min(enemy_behind_distance.get(), pos.getX()));
-            else{
-                enemy_front_distance.set(Math.min(enemy_front_distance.get(), pos.getX()));
-            }
-        });
+        int enemy_front_distance = 5;
+        int enemy_behind_distance = 5;
+        for(BoardPoint pos : enemyPos){
+            int pos_x = pos.getX();
+            int myPos = myCurPos.getX();
 
-        return enemy_behind_distance.get() < enemy_front_distance.get();
+            if(pos_x < myPos){
+                enemy_behind_distance = Math.min(
+                        enemy_behind_distance,
+                        Math.abs(pos_x - myPos));
+            }
+            else{
+                enemy_front_distance = Math.min(
+                        enemy_front_distance,
+                        Math.abs(pos_x - myPos));
+            }
+        }
+
+        return enemy_behind_distance < enemy_front_distance;
     }
 
 

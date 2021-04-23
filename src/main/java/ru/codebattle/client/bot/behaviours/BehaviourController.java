@@ -25,7 +25,7 @@ public class BehaviourController {
         }
 
         //get enemy positioning respective to the hero
-        int STATUS_CODE = et.enemyPositioning(enemy_pos_list, myCurPos);
+        int STATUS_CODE = et.getEnemyPositioning(enemy_pos_list, myCurPos);
 
         // hero is sandwiched
         switch (STATUS_CODE) {
