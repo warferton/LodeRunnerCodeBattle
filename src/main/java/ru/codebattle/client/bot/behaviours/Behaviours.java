@@ -5,7 +5,6 @@ import ru.codebattle.client.api.BoardPoint;
 import ru.codebattle.client.api.LoderunnerAction;
 import ru.codebattle.client.bot.trackers.EnemyTracker;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 

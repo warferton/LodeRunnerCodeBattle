@@ -2,7 +2,6 @@ package ru.codebattle.client.bot;
 
 import ru.codebattle.client.api.GameBoard;
 import ru.codebattle.client.bot.behaviours.BehaviourController;
-import ru.codebattle.client.bot.trackers.EnemyTracker;
 import ru.codebattle.client.bot.trackers.GoldTracker;
 import ru.codebattle.client.bot.trackers.PillTracker;
 
@@ -14,6 +13,10 @@ public class PathFinder {
 
     public PathFinder(GameBoard gameBoard) {
         this.gameBoard = gameBoard;
+    }
+
+    public void findPathToGold(){
+        
     }
 }
 
@@ -35,7 +38,7 @@ public class PathFinder {
   *         Func's needed: (1) SortGoldByCloseness ( V )
   *                        (2) ConstructPath  (X)
   *                        (3) CheckEnemies / EnemyTracker   (V)
-  *                        (4) EvasionBehaviour (?)
+  *                        (4) EvasionBehaviour (V)
   *                  ----------------------------------------------------------------
   * TODO:
   *  Additional Enhancements:

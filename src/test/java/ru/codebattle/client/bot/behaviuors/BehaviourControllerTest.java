@@ -1,6 +1,5 @@
 package ru.codebattle.client.bot.behaviuors;
 
-import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.Test;
 import ru.codebattle.client.api.BoardPoint;
 import ru.codebattle.client.api.GameBoard;
@@ -8,10 +7,7 @@ import ru.codebattle.client.api.LoderunnerAction;
 import ru.codebattle.client.bot.behaviours.BehaviourController;
 import ru.codebattle.client.bot.trackers.EnemyTracker;
 
-import java.util.List;
-
 import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class BehaviourControllerTest {
     GameBoard gameBoard = new GameBoard(
