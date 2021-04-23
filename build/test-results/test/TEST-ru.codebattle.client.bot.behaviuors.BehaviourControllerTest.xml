@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ru.codebattle.client.bot.behaviuors.BehaviourControllerTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-04-23T18:20:54" hostname="AlexMac.local" time="0.054">
+  <properties/>
+  <testcase name="testGetBehaviour()" classname="ru.codebattle.client.bot.behaviuors.BehaviourControllerTest" time="0.054"/>
+  <system-out><![CDATA[23:20:54.340 [Test worker] INFO  r.c.c.b.b.BehaviourController - Enemy In-front!
+Seconds elapsed: 0.0
+DRILL_RIGHT
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

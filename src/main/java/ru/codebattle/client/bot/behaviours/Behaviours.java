@@ -19,16 +19,14 @@ public class Behaviours {
         this.et = et;
     }
 
-    private final ArrayList<BoardElement> HERO_STATES_LEFT = (ArrayList<BoardElement>)
-            Arrays.asList(
+    private final List<BoardElement> HERO_STATES_LEFT = Arrays.asList(
                 HERO_LEFT,
                 HERO_PIPE_LEFT,
                 HERO_SHADOW_LEFT,
                 HERO_SHADOW_PIPE_LEFT
     );
 
-    private final ArrayList<BoardElement> HERO_STATES_RIGHT = (ArrayList<BoardElement>)
-            Arrays.asList(
+    private final List<BoardElement> HERO_STATES_RIGHT = Arrays.asList(
                 HERO_RIGHT,
                 HERO_PIPE_RIGHT,
                 HERO_SHADOW_RIGHT,

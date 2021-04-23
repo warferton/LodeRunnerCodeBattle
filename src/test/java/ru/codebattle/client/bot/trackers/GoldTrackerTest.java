@@ -1,5 +1,6 @@
 package ru.codebattle.client.bot.trackers;
 
+import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.Test;
 import ru.codebattle.client.api.BoardPoint;
 import ru.codebattle.client.api.GameBoard;
@@ -87,4 +88,5 @@ public class GoldTrackerTest {
         assertEquals(compare_pos, pos_str);
         System.out.println("Seconds elapsed: " + (float) (time / 1000));
     }
+
 }

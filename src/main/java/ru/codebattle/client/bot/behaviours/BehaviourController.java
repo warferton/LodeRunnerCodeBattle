@@ -11,8 +11,13 @@ import java.util.List;
 
 @Slf4j
 public class BehaviourController {
-    EnemyTracker et = new EnemyTracker();
-    Behaviours behaviours = new Behaviours(et);
+    EnemyTracker et;
+    Behaviours behaviours;
+
+    public BehaviourController(EnemyTracker et) {
+        this.et = et;
+        behaviours = new Behaviours(et);
+    }
 
     public LoderunnerAction getBehaviour(GameBoard gameBoard, BoardPoint myCurPos) {
         List<BoardPoint> enemy_pos_list = et.getEnemyInQuadrant(gameBoard, myCurPos, 5, 1);
