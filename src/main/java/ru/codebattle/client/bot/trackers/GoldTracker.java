@@ -18,16 +18,16 @@ public class GoldTracker {
                 // Calculate vector lengths to determine distance to gold
                 double dist_1 =
                         //manhattan
-//                        Math.abs(myCurPos.getX() - o1.getX()) + Math.abs(myCurPos.getY() - o1.getY());
+                        Math.abs(myCurPos.getX() - o1.getX()) + Math.abs(myCurPos.getY() - o1.getY());
                         //raw euclidean;
-                        Math.sqrt(Math.pow(myCurPos.getY() - o1.getY(), 2) +
-                        Math.pow(myCurPos.getX() - o1.getX(), 2));
+//                        Math.sqrt(Math.pow(myCurPos.getY() - o1.getY(), 2) +
+//                        Math.pow(myCurPos.getX() - o1.getX(), 2));
                 double dist_2 =
                         //manhattan
-//                        Math.abs(myCurPos.getX() - o2.getX()) + Math.abs(myCurPos.getY() - o2.getY());
+                        Math.abs(myCurPos.getX() - o2.getX()) + Math.abs(myCurPos.getY() - o2.getY());
                         // raw euclidean;
-                        Math.sqrt(Math.pow(myCurPos.getY() - o2.getY(), 2) +
-                        Math.pow(myCurPos.getX() - o2.getX(), 2));
+//                        Math.sqrt(Math.pow(myCurPos.getY() - o2.getY(), 2) +
+//                        Math.pow(myCurPos.getX() - o2.getX(), 2));
                 return Double.compare(dist_1, dist_2);
             }
         });
