@@ -2,6 +2,7 @@ package ru.codebattle.client.bot.algorithms.bestfirst;
 
 import ru.codebattle.client.api.BoardElement;
 import ru.codebattle.client.api.BoardPoint;
+import ru.codebattle.client.bot.algorithms.astar.BoardElementWeight;
 
 import java.util.ArrayList;
 import java.util.List;

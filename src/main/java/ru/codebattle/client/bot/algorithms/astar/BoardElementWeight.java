@@ -1,4 +1,4 @@
-package ru.codebattle.client.bot.algorithms.bestfirst;
+package ru.codebattle.client.bot.algorithms.astar;
 
 import lombok.Getter;
 import ru.codebattle.client.api.BoardElement;
@@ -9,7 +9,7 @@ public enum BoardElementWeight {
 
     NONE(2),                    // Пустое место – по которому может двигаться герой
 
-    BRICK(5),                   // Cтена в которой можно просверлить дырочку слева или справа от героя
+    BRICK(10),                   // Cтена в которой можно просверлить дырочку слева или справа от героя
     // (в зависимости от того, куда он сейчас смотрит)
 
     PIT_FILL_1(2),              // Стена со временем зарастает. Когда процес начинается - мы видим таймер

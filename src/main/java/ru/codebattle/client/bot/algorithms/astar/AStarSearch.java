@@ -4,7 +4,6 @@ import lombok.Setter;
 import lombok.extern.slf4j.Slf4j;
 import ru.codebattle.client.api.BoardPoint;
 import ru.codebattle.client.api.GameBoard;
-import ru.codebattle.client.bot.algorithms.bestfirst.BoardElementWeight;
 
 import java.util.*;
 
@@ -25,7 +24,7 @@ public class AStarSearch {
     private static ArrayList<Node> closedSet = new ArrayList<>();
     private static LinkedList<Node> path;
 
-    public static LinkedList<Node> cunstructPath(GameBoard gameBoard, Node start, Node end){
+    public static LinkedList<Node> findPath(GameBoard gameBoard, Node start, Node end){
         setGameBoard(gameBoard);
         openSet.add(start);
         while(openSet.size() > 0){
@@ -33,22 +32,14 @@ public class AStarSearch {
             if(cur.equals(end)){
                 log.info("FOUND! : " + end.toString());
                 //construct path
-                path = new LinkedList<>();
-                Node temp = cur;
-                path.push(temp);
-                while(temp.hasParent()){
-                    path.push(temp.getPathParent());
-                    temp = temp.getPathParent();
-                }
-                log.info("PATH CONSTRUCTED: " + path.toString());
-                return path;
+                return constructPath(cur);
             }
             closedSet.add(cur);
 
             List<Node> neighbours = cur.getNeighbors();
 
             for(Node node : neighbours){
-                if(closedSet.contains(node))
+                if(closedSet.contains(node) || node.getWeight() > 20)
                     continue;
 
                 long tempG = cur.getG() + 1 ;
@@ -72,5 +63,16 @@ public class AStarSearch {
         return path;
     }
 
+    private static LinkedList<Node> constructPath(Node cur){
+        path = new LinkedList<>();
+        Node temp = cur;
+        path.push(temp);
+        while(temp.hasParent()){
+            path.push(temp.getPathParent());
+            temp = temp.getPathParent();
+        }
+        log.info("PATH CONSTRUCTED: " + path.toString());
+        return path;
+    }
 
 }

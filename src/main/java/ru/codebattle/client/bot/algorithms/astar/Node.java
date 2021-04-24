@@ -4,7 +4,6 @@ import lombok.Getter;
 import lombok.Setter;
 import ru.codebattle.client.api.BoardPoint;
 import ru.codebattle.client.api.GameBoard;
-import ru.codebattle.client.bot.algorithms.bestfirst.BoardElementWeight;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -24,11 +23,13 @@ public class Node extends BoardPoint {
     @Getter
     private long heuristic;
     @Getter
-    private int weight;
+    private int weight = Integer.MAX_VALUE;
 
     public Node(int x, int y, GameBoard gameBoard) {
         super(x, y);
-        weight = BoardElementWeight.valueOf(gameBoard.getElementAt(this).name()).getWeight();
+        try {
+            weight = BoardElementWeight.valueOf(gameBoard.getElementAt(this).name()).getWeight();
+        }catch (IndexOutOfBoundsException e){}
         this.gameBoard = gameBoard;
     }
     public Node(BoardPoint point, GameBoard gameBoard) {
@@ -87,18 +88,19 @@ public class Node extends BoardPoint {
     //TODO:  isOutOfBoard not working ....???
     public List<Node> getNeighbors(){
         List<Node> list = new ArrayList<>();
+        int boardSize = gameBoard.size();
         Node top = shiftTop();
         Node left = shiftLeft();
         Node bottom = shiftBottom();
         Node right = shiftRight();
+        list.add(left);
+        list.add(right);
+        list.add(bottom);
         if (!gameBoard.hasBarrierAt(top) && gameBoard.hasLadderAt(top))
             list.add(top);
-        if (!gameBoard.hasBarrierAt(left))
-            list.add(left);
-        if (!gameBoard.hasBarrierAt(bottom))
-            list.add(bottom);
-        if (!gameBoard.hasBarrierAt(right))
-            list.add(right);
+
+
+
         return list;
     }
 }

@@ -19,7 +19,7 @@ class AStarSearchTest {
                     "☼H   &$H    H &&&   & H#####H#  && H ~  ⊐H    @H  ~~     ☼\n" +
                     "☼H#☼#☼#H   &H         H  ~~~ #####H#     H     H     ~( (☼\n" +
                     "☼H  ~  H~~~ЄH~~~~Є~ ( H        &  H   H######H##      ЄЄ(☼\n" +
-                    "☼H     H $  H ►$ (H###☼☼☼☼☼☼H☼    H~~~H  »   H          #☼\n" +
+                    "☼H     H $  H  $ (H###☼☼☼☼☼☼H☼    H~~~H  »   H          #☼\n" +
                     "☼H(  ( H    H#####H         H    «H      H#########H     ☼\n" +
                     "☼☼###☼##☼##☼H  &      H###H##    H##     H#&      ##    (☼\n" +
                     "☼☼###☼~~~~  H &       H   H######H######### H###H #####H#☼\n" +// Found this one
@@ -33,7 +33,7 @@ class AStarSearchTest {
                     "☼    &  H$&  ##H   #######H##########~~Є~~~~H######## H  ☼\n" +
                     "☼       H  $&##H()(     & H&     $    (     H      &  H  ☼\n" +
                     "☼##H#####    ########H#######~~~~  ~~~#########~~~~~  H  ☼\n" +
-                    "☼  H                 H  && $                   (  ~~~~H  ☼\n" +
+                    "☼  H       ►         H  && $                   (  ~~~~H  ☼\n" +
                     "☼######## H##########H   @    #☼☼☼☼☼☼#   ☼☼☼☼☼☼☼     &H  ☼\n" +
                     "☼(    &   H & @ $   $H        ~(&    ~     &   @  (   H  ☼\n" +
                     "☼☼☼      )H~~~~~~~~~~H     &  &######   ###########   H  ☼\n" +
@@ -74,19 +74,26 @@ class AStarSearchTest {
     private GoldTracker gt = new GoldTracker();
     List<BoardPoint> gold_list = gt.getByCloseness(gameBoard, myCurPos);
     Node end = new Node(gold_list.get(0), gameBoard);
+    Node end2 = new Node(gold_list.get(1), gameBoard);
 
 
-    // About 0.4 - 0.5 sec
+    // About 0.2 - 0.5 sec
     @Test
     void cunstructPath() {
         System.out.println(gold_list.toString());
-        long start = System.currentTimeMillis();
-        List<Node> path = AStarSearch.cunstructPath(gameBoard,myCurPos, end);
-        long time = System.currentTimeMillis() - start;
-        System.out.println("Time Elapsed : " + (float)time/1000);
         System.out.println("Actual GoldBag: " + end.toString());
         System.out.println("Initial Position: " + myCurPos.toString());
-        System.out.println(path);
+        long start = System.currentTimeMillis();
+        List<Node> path = AStarSearch.findPath(gameBoard,myCurPos, end);
+        long time = System.currentTimeMillis() - start;
+        System.out.println("Time Elapsed : " + (float)time/1000);
+        System.out.println("Actual GoldBag: " + end2.toString());
+        long start2 = System.currentTimeMillis();
+        List<Node> path2 = AStarSearch.findPath(gameBoard,myCurPos, end2);
+        long time2 = System.currentTimeMillis() - start2;
+        System.out.println("Time Elapsed : " + (float)time2/1000);
+        System.out.println(path2);
+        assertNotNull(path2);
         assertNotNull(path);
     }
 }

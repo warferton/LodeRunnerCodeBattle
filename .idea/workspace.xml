@@ -27,6 +27,7 @@
   <component name="ChangeListManager">
     <list default="true" id="db8eec79-c78b-4951-8f78-b4ab756d2349" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/../Astar/src/bestfirst/BestFirstSearch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.8.1/fileContent/fileContent.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8.1/fileContent/fileContent.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.8.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8.1/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.8.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8.1/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.8.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
@@ -34,9 +35,13 @@
       <change beforePath="$PROJECT_DIR$/.gradle/4.8.1/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8.1/taskHistory/taskHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/ru/codebattle/client/bot/algorithms/astar/AStarSearch$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/ru/codebattle/client/bot/algorithms/astar/AStarSearch$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/ru/codebattle/client/bot/algorithms/astar/AStarSearch.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/ru/codebattle/client/bot/algorithms/astar/AStarSearch.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/ru/codebattle/client/bot/algorithms/astar/Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/ru/codebattle/client/bot/algorithms/astar/Node.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/ru/codebattle/client/bot/algorithms/bestfirst/BoardElementWeight.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/ru/codebattle/client/bot/algorithms/bestfirst/BoardElementWeight.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/ru/codebattle/client/bot/trackers/GoldTracker$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/ru/codebattle/client/bot/trackers/GoldTracker$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/ru/codebattle/client/bot/algorithms/bestfirst/BestFirstSearch.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/ru/codebattle/client/bot/algorithms/bestfirst/BestFirstSearch.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/ru/codebattle/client/bot/algorithms/bestfirst/BoardElementWeight.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/ru/codebattle/client/bot/algorithms/bestfirst/NodePoint.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/ru/codebattle/client/bot/algorithms/bestfirst/NodePoint.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/ru/codebattle/client/bot/algorithms/greedybreadthfirst/GreedyBreadthFirst.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/test/ru/codebattle/client/bot/algorithms/astar/AStarSearchTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/ru/codebattle/client/bot/algorithms/astar/AStarSearchTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/ru.codebattle.client.bot.algorithms.astar.AStarSearchTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/ru.codebattle.client.bot.algorithms.astar.AStarSearchTest.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/index.html" afterDir="false" />
@@ -44,10 +49,13 @@
       <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-ru.codebattle.client.bot.algorithms.astar.AStarSearchTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-ru.codebattle.client.bot.algorithms.astar.AStarSearchTest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/codebattle/client/bot/algorithms/astar/AStarSearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/codebattle/client/bot/algorithms/astar/AStarSearch.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/codebattle/client/bot/algorithms/astar/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/codebattle/client/bot/algorithms/astar/Node.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/codebattle/client/bot/algorithms/bestfirst/BoardElementWeight.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/codebattle/client/bot/algorithms/bestfirst/BoardElementWeight.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/codebattle/client/bot/trackers/GoldTracker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/codebattle/client/bot/trackers/GoldTracker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/codebattle/client/bot/algorithms/bestfirst/BestFirstSearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/codebattle/client/bot/algorithms/bestfirst/BestFirstSearch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/codebattle/client/bot/algorithms/bestfirst/BoardElementWeight.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/codebattle/client/bot/algorithms/astar/BoardElementWeight.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/codebattle/client/bot/algorithms/bestfirst/NodePoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/codebattle/client/bot/algorithms/bestfirst/NodePoint.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/codebattle/client/bot/algorithms/greedybreadthfirst/GreedyBreadthFirst.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/ru/codebattle/client/bot/algorithms/astar/AStarSearchTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/codebattle/client/bot/algorithms/astar/AStarSearchTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -282,60 +290,60 @@
       <screen x="0" y="25" width="1440" height="807" />
     </state>
     <state width="416" height="438" key="DebuggerActiveHint/0.25.1440.807@0.25.1440.807" timestamp="1619267373492" />
-    <state width="1398" height="255" key="GridCell.Tab.0.bottom" timestamp="1619298256480">
-      <screen x="0" y="25" width="1440" height="805" />
+    <state width="1398" height="253" key="GridCell.Tab.0.bottom" timestamp="1619303119724">
+      <screen x="0" y="25" width="1440" height="804" />
     </state>
     <state width="1398" height="433" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1619107243937" />
     <state width="1398" height="327" key="GridCell.Tab.0.bottom/0.25.1440.803@0.25.1440.803" timestamp="1619188742718" />
-    <state width="1398" height="254" key="GridCell.Tab.0.bottom/0.25.1440.804@0.25.1440.804" timestamp="1619210842501" />
-    <state width="1398" height="255" key="GridCell.Tab.0.bottom/0.25.1440.805@0.25.1440.805" timestamp="1619298256480" />
+    <state width="1398" height="253" key="GridCell.Tab.0.bottom/0.25.1440.804@0.25.1440.804" timestamp="1619303119724" />
+    <state width="1398" height="230" key="GridCell.Tab.0.bottom/0.25.1440.805@0.25.1440.805" timestamp="1619298497713" />
     <state width="1398" height="255" key="GridCell.Tab.0.bottom/0.25.1440.807@0.25.1440.807" timestamp="1619297903453" />
-    <state width="1398" height="255" key="GridCell.Tab.0.center" timestamp="1619298256479">
-      <screen x="0" y="25" width="1440" height="805" />
+    <state width="1398" height="253" key="GridCell.Tab.0.center" timestamp="1619303119723">
+      <screen x="0" y="25" width="1440" height="804" />
     </state>
     <state width="1398" height="433" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1619107243936" />
     <state width="1398" height="327" key="GridCell.Tab.0.center/0.25.1440.803@0.25.1440.803" timestamp="1619188742717" />
-    <state width="1398" height="254" key="GridCell.Tab.0.center/0.25.1440.804@0.25.1440.804" timestamp="1619210842501" />
-    <state width="1398" height="255" key="GridCell.Tab.0.center/0.25.1440.805@0.25.1440.805" timestamp="1619298256479" />
+    <state width="1398" height="253" key="GridCell.Tab.0.center/0.25.1440.804@0.25.1440.804" timestamp="1619303119723" />
+    <state width="1398" height="230" key="GridCell.Tab.0.center/0.25.1440.805@0.25.1440.805" timestamp="1619298497712" />
     <state width="1398" height="255" key="GridCell.Tab.0.center/0.25.1440.807@0.25.1440.807" timestamp="1619297903452" />
-    <state width="1398" height="255" key="GridCell.Tab.0.left" timestamp="1619298256478">
-      <screen x="0" y="25" width="1440" height="805" />
+    <state width="1398" height="253" key="GridCell.Tab.0.left" timestamp="1619303119723">
+      <screen x="0" y="25" width="1440" height="804" />
     </state>
     <state width="1398" height="433" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1619107243935" />
     <state width="1398" height="327" key="GridCell.Tab.0.left/0.25.1440.803@0.25.1440.803" timestamp="1619188742717" />
-    <state width="1398" height="254" key="GridCell.Tab.0.left/0.25.1440.804@0.25.1440.804" timestamp="1619210842500" />
-    <state width="1398" height="255" key="GridCell.Tab.0.left/0.25.1440.805@0.25.1440.805" timestamp="1619298256478" />
+    <state width="1398" height="253" key="GridCell.Tab.0.left/0.25.1440.804@0.25.1440.804" timestamp="1619303119723" />
+    <state width="1398" height="230" key="GridCell.Tab.0.left/0.25.1440.805@0.25.1440.805" timestamp="1619298497712" />
     <state width="1398" height="255" key="GridCell.Tab.0.left/0.25.1440.807@0.25.1440.807" timestamp="1619297903452" />
-    <state width="1398" height="255" key="GridCell.Tab.0.right" timestamp="1619298256479">
-      <screen x="0" y="25" width="1440" height="805" />
+    <state width="1398" height="253" key="GridCell.Tab.0.right" timestamp="1619303119724">
+      <screen x="0" y="25" width="1440" height="804" />
     </state>
     <state width="1398" height="433" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1619107243936" />
     <state width="1398" height="327" key="GridCell.Tab.0.right/0.25.1440.803@0.25.1440.803" timestamp="1619188742718" />
-    <state width="1398" height="254" key="GridCell.Tab.0.right/0.25.1440.804@0.25.1440.804" timestamp="1619210842501" />
-    <state width="1398" height="255" key="GridCell.Tab.0.right/0.25.1440.805@0.25.1440.805" timestamp="1619298256479" />
+    <state width="1398" height="253" key="GridCell.Tab.0.right/0.25.1440.804@0.25.1440.804" timestamp="1619303119724" />
+    <state width="1398" height="230" key="GridCell.Tab.0.right/0.25.1440.805@0.25.1440.805" timestamp="1619298497712" />
     <state width="1398" height="255" key="GridCell.Tab.0.right/0.25.1440.807@0.25.1440.807" timestamp="1619297903453" />
-    <state width="1398" height="255" key="GridCell.Tab.1.bottom" timestamp="1619298256481">
-      <screen x="0" y="25" width="1440" height="805" />
+    <state width="1398" height="253" key="GridCell.Tab.1.bottom" timestamp="1619303119725">
+      <screen x="0" y="25" width="1440" height="804" />
     </state>
-    <state width="1398" height="254" key="GridCell.Tab.1.bottom/0.25.1440.804@0.25.1440.804" timestamp="1619210842504" />
+    <state width="1398" height="253" key="GridCell.Tab.1.bottom/0.25.1440.804@0.25.1440.804" timestamp="1619303119725" />
     <state width="1398" height="255" key="GridCell.Tab.1.bottom/0.25.1440.805@0.25.1440.805" timestamp="1619298256481" />
     <state width="1398" height="255" key="GridCell.Tab.1.bottom/0.25.1440.807@0.25.1440.807" timestamp="1619297903454" />
-    <state width="1398" height="255" key="GridCell.Tab.1.center" timestamp="1619298256480">
-      <screen x="0" y="25" width="1440" height="805" />
+    <state width="1398" height="253" key="GridCell.Tab.1.center" timestamp="1619303119725">
+      <screen x="0" y="25" width="1440" height="804" />
     </state>
-    <state width="1398" height="254" key="GridCell.Tab.1.center/0.25.1440.804@0.25.1440.804" timestamp="1619210842503" />
+    <state width="1398" height="253" key="GridCell.Tab.1.center/0.25.1440.804@0.25.1440.804" timestamp="1619303119725" />
     <state width="1398" height="255" key="GridCell.Tab.1.center/0.25.1440.805@0.25.1440.805" timestamp="1619298256480" />
     <state width="1398" height="255" key="GridCell.Tab.1.center/0.25.1440.807@0.25.1440.807" timestamp="1619297903454" />
-    <state width="1398" height="255" key="GridCell.Tab.1.left" timestamp="1619298256480">
-      <screen x="0" y="25" width="1440" height="805" />
+    <state width="1398" height="253" key="GridCell.Tab.1.left" timestamp="1619303119724">
+      <screen x="0" y="25" width="1440" height="804" />
     </state>
-    <state width="1398" height="254" key="GridCell.Tab.1.left/0.25.1440.804@0.25.1440.804" timestamp="1619210842502" />
+    <state width="1398" height="253" key="GridCell.Tab.1.left/0.25.1440.804@0.25.1440.804" timestamp="1619303119724" />
     <state width="1398" height="255" key="GridCell.Tab.1.left/0.25.1440.805@0.25.1440.805" timestamp="1619298256480" />
     <state width="1398" height="255" key="GridCell.Tab.1.left/0.25.1440.807@0.25.1440.807" timestamp="1619297903453" />
-    <state width="1398" height="255" key="GridCell.Tab.1.right" timestamp="1619298256480">
-      <screen x="0" y="25" width="1440" height="805" />
+    <state width="1398" height="253" key="GridCell.Tab.1.right" timestamp="1619303119725">
+      <screen x="0" y="25" width="1440" height="804" />
     </state>
-    <state width="1398" height="254" key="GridCell.Tab.1.right/0.25.1440.804@0.25.1440.804" timestamp="1619210842503" />
+    <state width="1398" height="253" key="GridCell.Tab.1.right/0.25.1440.804@0.25.1440.804" timestamp="1619303119725" />
     <state width="1398" height="255" key="GridCell.Tab.1.right/0.25.1440.805@0.25.1440.805" timestamp="1619298256480" />
     <state width="1398" height="255" key="GridCell.Tab.1.right/0.25.1440.807@0.25.1440.807" timestamp="1619297903454" />
     <state x="208" y="25" key="SettingsEditor" timestamp="1619182058783">
@@ -375,70 +383,20 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/main/java/ru/codebattle/client/bot/algorithms/astar/Node.java</url>
-          <line>102</line>
-          <properties class="ru.codebattle.client.bot.algorithms.astar.Node" method="getNeighbors">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="33" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/ru/codebattle/client/bot/algorithms/astar/Node.java</url>
-          <line>108</line>
-          <option name="timeStamp" value="34" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/ru/codebattle/client/bot/algorithms/astar/Node.java</url>
-          <line>111</line>
-          <option name="timeStamp" value="35" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/ru/codebattle/client/bot/algorithms/astar/Node.java</url>
-          <line>113</line>
-          <option name="timeStamp" value="36" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/ru/codebattle/client/bot/algorithms/astar/Node.java</url>
-          <line>116</line>
-          <option name="timeStamp" value="37" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/ru/codebattle/client/bot/algorithms/astar/Node.java</url>
-          <line>82</line>
-          <option name="timeStamp" value="38" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/ru/codebattle/client/bot/algorithms/astar/Node.java</url>
-          <line>80</line>
-          <option name="timeStamp" value="39" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/ru/codebattle/client/bot/algorithms/astar/Node.java</url>
-          <line>81</line>
+          <line>74</line>
           <option name="timeStamp" value="40" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/ru/codebattle/client/bot/algorithms/astar/Node.java</url>
-          <line>71</line>
-          <option name="timeStamp" value="41" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/ru/codebattle/client/bot/algorithms/astar/Node.java</url>
-          <line>73</line>
-          <option name="timeStamp" value="43" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/ru/codebattle/client/bot/algorithms/astar/Node.java</url>
-          <line>64</line>
-          <option name="timeStamp" value="44" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/ru/codebattle/client/bot/algorithms/astar/Node.java</url>
-          <line>62</line>
+          <line>63</line>
           <option name="timeStamp" value="45" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/loderunner_client$AStarSearchTest_cunstructPath.ic" NAME="AStarSearchTest.cunstructPath Coverage Results" MODIFIED="1619300019225" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

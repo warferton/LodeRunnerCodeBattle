@@ -1,8 +1,8 @@
 package ru.codebattle.client.bot.algorithms.bestfirst;
 
-import ru.codebattle.client.api.BoardElement;
 import ru.codebattle.client.api.BoardPoint;
 import ru.codebattle.client.api.GameBoard;
+import ru.codebattle.client.bot.algorithms.astar.BoardElementWeight;
 
 public class BestFirstSearch {
     private GameBoard gameBoard;
