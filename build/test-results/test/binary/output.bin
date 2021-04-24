@@ -1,3 +1,4 @@
-M23:22:59.901 [Test worker] INFO  r.c.c.b.b.BehaviourController - Good to Go!
+[16,14]
+[[13,14], [21,14]]
 Seconds elapsed: 0.0
-DO_NOTHING
+GREEN_GOLD

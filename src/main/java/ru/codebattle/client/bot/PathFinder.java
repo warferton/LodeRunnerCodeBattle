@@ -43,5 +43,6 @@ public class PathFinder {
   * TODO:
   *  Additional Enhancements:
   *                     1 - Make PathConstruction and enemy check run concurrently
-  *
+  *                     2- run 3 path searches concurrently - which ever is the first -> execute
+  *                         -> that solves a problem when gold is below bricks
   */

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ru.codebattle.client.bot.trackers.EnemyTrackerTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-04-24T01:08:26" hostname="AlexMac.local" time="0.03">
+  <properties/>
+  <testcase name="testIsNearestEnemyBehind()" classname="ru.codebattle.client.bot.trackers.EnemyTrackerTest" time="0.03"/>
+  <system-out><![CDATA[[16,14]
+[[13,14], [21,14]]
+Seconds elapsed: 0.0
+GREEN_GOLD
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
