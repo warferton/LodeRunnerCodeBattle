@@ -1,4 +1,5 @@
-[16,14]
-[[13,14], [21,14]]
-Seconds elapsed: 0.0
-GREEN_GOLD
+Y18:49:35.190 [Test worker] INFO  r.c.c.b.algorithms.astar.AStarSearch - FOUND! : [14,11]
+ç18:49:35.197 [Test worker] INFO  r.c.c.b.algorithms.astar.AStarSearch - PATH CONSTRUCTED: [[16,14], [15,14], [14,14], [13,14], [12,14], [11,14], [10,14], [9,14], [9,13], [9,12], [9,11], [10,11], [11,11], [12,11], [13,11], [14,11]]
+Time Elapsed : 1.221
+Actual GoldBag: [14,11]
+Initial Position: [16,14]

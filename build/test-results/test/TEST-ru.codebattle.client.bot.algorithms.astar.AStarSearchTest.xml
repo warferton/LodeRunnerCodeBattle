@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ru.codebattle.client.bot.algorithms.astar.AStarSearchTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-04-24T13:49:33" hostname="AlexMac.local" time="1.233">
+  <properties/>
+  <testcase name="cunstructPath()" classname="ru.codebattle.client.bot.algorithms.astar.AStarSearchTest" time="1.233"/>
+  <system-out><![CDATA[18:49:35.190 [Test worker] INFO  r.c.c.b.algorithms.astar.AStarSearch - FOUND! : [14,11]
+18:49:35.197 [Test worker] INFO  r.c.c.b.algorithms.astar.AStarSearch - PATH CONSTRUCTED: [[16,14], [15,14], [14,14], [13,14], [12,14], [11,14], [10,14], [9,14], [9,13], [9,12], [9,11], [10,11], [11,11], [12,11], [13,11], [14,11]]
+Time Elapsed : 1.221
+Actual GoldBag: [14,11]
+Initial Position: [16,14]
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
