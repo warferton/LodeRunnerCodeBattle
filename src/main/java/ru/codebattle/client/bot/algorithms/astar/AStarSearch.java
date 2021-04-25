@@ -43,21 +43,24 @@ public class AStarSearch {
                     continue;
 
                 long tempG = cur.getG() + 1 ;
-
+                boolean newPath = false;
                 if(openSet.contains(node)){
                     if(tempG < node.getG())
                         node.setG(tempG);
+                        newPath = true;
                 }
                 else{
                     node.setG(tempG);
                     openSet.add(node);
+                    newPath = true;
                 }
-
-                node.setHeuristic(end);
-                node.setF(node.getG() + node.getHeuristic());
-                node.setPathParent(cur);
+                if(newPath) {
+                    node.setHeuristic(end);
+                    node.setF(node.getG() + node.getHeuristic());
+                    node.setPathParent(cur);
+                }
             }
-
+            path = constructPath(cur);
         }
         log.error("NO PATH FOUND");
         return path;

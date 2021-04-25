@@ -4,18 +4,21 @@ import ru.codebattle.client.api.GameBoard;
 import ru.codebattle.client.bot.behaviours.BehaviourController;
 import ru.codebattle.client.bot.trackers.GoldTracker;
 import ru.codebattle.client.bot.trackers.PillTracker;
+import ru.codebattle.client.bot.algorithms.astar.AStarSearch;
+import ru.codebattle.client.bot.trackers.PortalTracker;
 
 public class PathFinder {
-    GameBoard gameBoard;
-    GoldTracker goldTracker;
+    GameBoard gb;
+    GoldTracker gt;
     BehaviourController bc;
     PillTracker pillTracker;
+    PortalTracker portalTracker;
 
     public PathFinder(GameBoard gameBoard) {
-        this.gameBoard = gameBoard;
+        this.gb = gameBoard;
     }
 
-    public void findPathToGold(){
+    public void findPath(){
 
     }
 }
@@ -35,10 +38,16 @@ public class PathFinder {
   *                                 -> return to the beginning of the func.
   *                            (2) enemy behind -> dig hole behind -> move toward gold.
   *                  ----------------------------------------------------------------
+  *                         Stage - 1
   *         Func's needed: (1) SortGoldByCloseness ( V )
-  *                        (2) ConstructPath  (X)
+  *                        (2) ConstructPath  (V / ?)
   *                        (3) CheckEnemies / EnemyTracker   (V)
   *                        (4) EvasionBehaviour (V)
+  *                         Stage - 2
+  *                         (1) PathInterpreter (X)
+  *                         (2) BehaviourController (X)
+  *                         Extra:
+  *                               * Multi-threaded path finding
   *                  ----------------------------------------------------------------
   * TODO:
   *  Additional Enhancements:

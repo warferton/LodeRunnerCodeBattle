@@ -61,7 +61,6 @@ public class Node extends BoardPoint {
      */
     @Override
     public Node shiftLeft() {
-
         return new Node(getX()-1, getY(), gameBoard);
     }
 
@@ -88,15 +87,15 @@ public class Node extends BoardPoint {
     //TODO:  isOutOfBoard not working ....???
     public List<Node> getNeighbors(){
         List<Node> list = new ArrayList<>();
-        int boardSize = gameBoard.size();
         Node top = shiftTop();
         Node left = shiftLeft();
         Node bottom = shiftBottom();
         Node right = shiftRight();
         list.add(left);
         list.add(right);
-        list.add(bottom);
-        if (!gameBoard.hasBarrierAt(top) && gameBoard.hasLadderAt(top))
+        if (gameBoard.hasLadderAt(bottom))
+            list.add(bottom);
+        if (gameBoard.hasLadderAt(top))
             list.add(top);
 
 

@@ -5,28 +5,32 @@ import ru.codebattle.client.api.BoardElement;
 import ru.codebattle.client.api.BoardPoint;
 import ru.codebattle.client.api.GameBoard;
 import ru.codebattle.client.api.LoderunnerAction;
+import ru.codebattle.client.bot.algorithms.PathConstructor;
+import ru.codebattle.client.bot.algorithms.astar.Node;
 import ru.codebattle.client.bot.trackers.EnemyTracker;
 
+import java.util.LinkedList;
 import java.util.List;
 
 @Slf4j
 public class BehaviourController {
     EnemyTracker et;
     Behaviours behaviours;
+//    int ticCounter = 0; //??
 
     public BehaviourController(EnemyTracker et) {
         this.et = et;
         behaviours = new Behaviours(et);
     }
 
-    public LoderunnerAction getBehaviour(GameBoard gameBoard, BoardPoint myCurPos) {
+    public LoderunnerAction getBehaviour(GameBoard gameBoard, BoardPoint myCurPos, LinkedList<Node> path) {
         List<BoardPoint> enemy_pos_list = et.getEnemyInQuadrant(gameBoard, myCurPos, 5, 1);
         BoardElement myCurDirecton = gameBoard.getElementAt(myCurPos);
 
         // mo eme,ies near
         if (enemy_pos_list.isEmpty()) {
             log.info("Good to Go!");
-            /* continue traversing path */
+            return PathConstructor.createPath(myCurPos, path)[0];
         }
 
         //get enemy positioning respective to the hero
