@@ -23,13 +23,15 @@ public class AStarSearch {
     });
     private static ArrayList<Node> closedSet = new ArrayList<>();
     private static LinkedList<Node> path;
-
+    private final static int COUNTER = 1;
     public static LinkedList<Node> findPath(GameBoard gameBoard, Node start, Node end){
+        int board_size = gameBoard.size();
+        int loopCounter = COUNTER;
         setGameBoard(gameBoard);
         openSet.add(start);
-        while(openSet.size() > 0){
+        while (openSet.size() > 0 && loopCounter > 0) {
             Node cur = openSet.poll();
-            if(cur.equals(end)){
+            if (cur.equals(end)) {
                 log.info("FOUND! : " + end.toString());
                 //construct path
                 return constructPath(cur);
@@ -38,31 +40,34 @@ public class AStarSearch {
 
             List<Node> neighbours = cur.getNeighbors();
 
-            for(Node node : neighbours){
-                if(closedSet.contains(node) || node.getWeight() > 20)
+            for (Node node : neighbours) {
+                if (closedSet.contains(node) || node.isOutOfBoard(board_size) || node.getWeight() > 10)
                     continue;
 
-                long tempG = cur.getG() + 1 ;
+                long tempG = cur.getG() + 1;
                 boolean newPath = false;
-                if(openSet.contains(node)){
-                    if(tempG < node.getG())
+                if (openSet.contains(node)) {
+                    if (tempG < node.getG()) {
                         node.setG(tempG);
                         newPath = true;
-                }
-                else{
+                    }
+                } else {
                     node.setG(tempG);
                     openSet.add(node);
                     newPath = true;
                 }
-                if(newPath) {
+                if (newPath) {
                     node.setHeuristic(end);
-                    node.setF(node.getG() + node.getHeuristic());
+                    node.setF(node.getFinalCost());
                     node.setPathParent(cur);
                 }
             }
             path = constructPath(cur);
+            loopCounter--;
         }
-        log.error("NO PATH FOUND");
+
+        log.error("NO CORRECT PATH FOUND");
+        log.info("Final Path: " + path.toString());
         return path;
     }
 

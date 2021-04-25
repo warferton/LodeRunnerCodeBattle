@@ -3,6 +3,7 @@ package ru.codebattle.client;
 import ru.codebattle.client.api.GameBoard;
 import ru.codebattle.client.api.LoderunnerAction;
 import ru.codebattle.client.api.LoderunnerBase;
+import ru.codebattle.client.bot.PathFinder;
 
 import java.net.URISyntaxException;
 import java.util.Random;
@@ -10,6 +11,7 @@ import java.util.function.Function;
 
 public class LodeRunnerClient extends LoderunnerBase {
 
+    private final PathFinder pf = new PathFinder();
     private Function<GameBoard, LoderunnerAction> callback;
     private final Runnable closeHandler;
 
@@ -19,6 +21,7 @@ public class LodeRunnerClient extends LoderunnerBase {
     }
 
     public void run(Function<GameBoard, LoderunnerAction> callback) {
+
         connect();
         this.callback = callback;
     }
@@ -27,8 +30,7 @@ public class LodeRunnerClient extends LoderunnerBase {
     protected String doMove(GameBoard gameBoard) {
         clearScreen();
         gameBoard.printBoard();
-        Random random = new Random(System.currentTimeMillis());
-        LoderunnerAction action = callback.apply(gameBoard);
+        LoderunnerAction action = pf.findPath(gameBoard);
         System.out.println(action.toString());
         return loderunnerActionToString(action);
     }

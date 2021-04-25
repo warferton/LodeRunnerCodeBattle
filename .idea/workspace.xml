@@ -27,10 +27,7 @@
   <component name="ChangeListManager">
     <list default="true" id="db8eec79-c78b-4951-8f78-b4ab756d2349" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/../Astar/src/bestfirst/BestFirstSearch.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/codebattle/client/bot/algorithms/PathConstructor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/codebattle/client/bot/trackers/PortalTracker.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ru/codebattle/client/bot/trackers/PillTrackerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ru/codebattle/client/bot/trackers/PortalTrackerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/codebattle/client/bot/trackers/HeroTracker.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.8.1/fileContent/fileContent.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8.1/fileContent/fileContent.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.8.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8.1/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.8.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8.1/fileHashes/fileHashes.lock" afterDir="false" />
@@ -39,11 +36,16 @@
       <change beforePath="$PROJECT_DIR$/.gradle/4.8.1/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8.1/taskHistory/taskHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/ru/codebattle/client/LodeRunnerClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/ru/codebattle/client/LodeRunnerClient.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/ru/codebattle/client/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/ru/codebattle/client/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/ru/codebattle/client/api/GameBoard.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/ru/codebattle/client/api/GameBoard.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/ru/codebattle/client/bot/PathFinder.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/ru/codebattle/client/bot/PathFinder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/ru/codebattle/client/bot/algorithms/PathConstructor.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/ru/codebattle/client/bot/algorithms/PathConstructor.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/ru/codebattle/client/bot/algorithms/astar/AStarSearch.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/ru/codebattle/client/bot/algorithms/astar/AStarSearch.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/ru/codebattle/client/bot/algorithms/astar/BoardElementWeight.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/ru/codebattle/client/bot/algorithms/astar/BoardElementWeight.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/ru/codebattle/client/bot/algorithms/astar/Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/ru/codebattle/client/bot/algorithms/astar/Node.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/ru/codebattle/client/bot/behaviours/BehaviourController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/ru/codebattle/client/bot/behaviours/BehaviourController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/ru/codebattle/client/bot/trackers/PillTracker.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/ru/codebattle/client/bot/trackers/PillTracker.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/ru/codebattle/client/bot/behaviours/Behaviours.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/ru/codebattle/client/bot/behaviours/Behaviours.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/test/ru/codebattle/client/bot/algorithms/astar/AStarSearchTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/ru/codebattle/client/bot/algorithms/astar/AStarSearchTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/test/ru/codebattle/client/bot/behaviuors/BehaviourControllerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/ru/codebattle/client/bot/behaviuors/BehaviourControllerTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/ru.codebattle.client.bot.algorithms.astar.AStarSearchTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/ru.codebattle.client.bot.algorithms.astar.AStarSearchTest.html" afterDir="false" />
@@ -53,11 +55,16 @@
       <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/codebattle/client/LodeRunnerClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/codebattle/client/LodeRunnerClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/codebattle/client/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/codebattle/client/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/codebattle/client/api/GameBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/codebattle/client/api/GameBoard.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/codebattle/client/bot/PathFinder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/codebattle/client/bot/PathFinder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/codebattle/client/bot/algorithms/PathConstructor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/codebattle/client/bot/algorithms/PathConstructor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/codebattle/client/bot/algorithms/astar/AStarSearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/codebattle/client/bot/algorithms/astar/AStarSearch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/codebattle/client/bot/algorithms/astar/BoardElementWeight.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/codebattle/client/bot/algorithms/astar/BoardElementWeight.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/codebattle/client/bot/algorithms/astar/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/codebattle/client/bot/algorithms/astar/Node.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/codebattle/client/bot/behaviours/BehaviourController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/codebattle/client/bot/behaviours/BehaviourController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/codebattle/client/bot/trackers/PillTracker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/codebattle/client/bot/trackers/PillTracker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/codebattle/client/bot/behaviours/Behaviours.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/codebattle/client/bot/behaviours/Behaviours.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/ru/codebattle/client/bot/algorithms/astar/AStarSearchTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/codebattle/client/bot/algorithms/astar/AStarSearchTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/ru/codebattle/client/bot/behaviuors/BehaviourControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/codebattle/client/bot/behaviuors/BehaviourControllerTest.java" afterDir="false" />
     </list>
@@ -89,8 +96,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -136,32 +143,26 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.AStarSearchTest.testPathConstructor">
-    <configuration name="AStarSearchTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;ru.codebattle.client.bot.algorithms.astar.AStarSearchTest&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
-      <method v="2" />
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ru.codebattle.client.Main" />
+      <module name="loderunner-client.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.codebattle.client.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
-    <configuration name="AStarSearchTest.cunstructPath" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="AStarSearchTest.testConstructPath" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;ru.codebattle.client.bot.algorithms.astar.AStarSearchTest.cunstructPath&quot;" />
+        <option name="scriptParameters" value="--tests &quot;ru.codebattle.client.bot.algorithms.astar.AStarSearchTest.testConstructPath&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -235,10 +236,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.AStarSearchTest.testPathConstructor" />
+        <item itemvalue="Gradle.AStarSearchTest.testConstructPath" />
+        <item itemvalue="Application.Main" />
         <item itemvalue="Gradle.BehaviourControllerTest.testGetBehaviour" />
         <item itemvalue="Gradle.AStarSearchTest.testCunstructPath" />
-        <item itemvalue="Gradle.AStarSearchTest.cunstructPath" />
-        <item itemvalue="Gradle.AStarSearchTest" />
       </list>
     </recent_temporary>
   </component>
@@ -295,60 +296,60 @@
       <screen x="0" y="25" width="1440" height="807" />
     </state>
     <state width="416" height="438" key="DebuggerActiveHint/0.25.1440.807@0.25.1440.807" timestamp="1619267373492" />
-    <state width="1398" height="242" key="GridCell.Tab.0.bottom" timestamp="1619337220908">
-      <screen x="0" y="25" width="1440" height="805" />
+    <state width="1398" height="347" key="GridCell.Tab.0.bottom" timestamp="1619356895858">
+      <screen x="0" y="25" width="1440" height="804" />
     </state>
     <state width="1398" height="433" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1619107243937" />
     <state width="1398" height="327" key="GridCell.Tab.0.bottom/0.25.1440.803@0.25.1440.803" timestamp="1619188742718" />
-    <state width="1398" height="236" key="GridCell.Tab.0.bottom/0.25.1440.804@0.25.1440.804" timestamp="1619303280309" />
+    <state width="1398" height="347" key="GridCell.Tab.0.bottom/0.25.1440.804@0.25.1440.804" timestamp="1619356895858" />
     <state width="1398" height="242" key="GridCell.Tab.0.bottom/0.25.1440.805@0.25.1440.805" timestamp="1619337220908" />
     <state width="1398" height="255" key="GridCell.Tab.0.bottom/0.25.1440.807@0.25.1440.807" timestamp="1619297903453" />
-    <state width="1398" height="242" key="GridCell.Tab.0.center" timestamp="1619337220907">
-      <screen x="0" y="25" width="1440" height="805" />
+    <state width="1398" height="347" key="GridCell.Tab.0.center" timestamp="1619356895857">
+      <screen x="0" y="25" width="1440" height="804" />
     </state>
     <state width="1398" height="433" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1619107243936" />
     <state width="1398" height="327" key="GridCell.Tab.0.center/0.25.1440.803@0.25.1440.803" timestamp="1619188742717" />
-    <state width="1398" height="236" key="GridCell.Tab.0.center/0.25.1440.804@0.25.1440.804" timestamp="1619303280308" />
+    <state width="1398" height="347" key="GridCell.Tab.0.center/0.25.1440.804@0.25.1440.804" timestamp="1619356895857" />
     <state width="1398" height="242" key="GridCell.Tab.0.center/0.25.1440.805@0.25.1440.805" timestamp="1619337220907" />
     <state width="1398" height="255" key="GridCell.Tab.0.center/0.25.1440.807@0.25.1440.807" timestamp="1619297903452" />
-    <state width="1398" height="242" key="GridCell.Tab.0.left" timestamp="1619337220907">
-      <screen x="0" y="25" width="1440" height="805" />
+    <state width="1398" height="347" key="GridCell.Tab.0.left" timestamp="1619356895857">
+      <screen x="0" y="25" width="1440" height="804" />
     </state>
     <state width="1398" height="433" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1619107243935" />
     <state width="1398" height="327" key="GridCell.Tab.0.left/0.25.1440.803@0.25.1440.803" timestamp="1619188742717" />
-    <state width="1398" height="236" key="GridCell.Tab.0.left/0.25.1440.804@0.25.1440.804" timestamp="1619303280307" />
+    <state width="1398" height="347" key="GridCell.Tab.0.left/0.25.1440.804@0.25.1440.804" timestamp="1619356895857" />
     <state width="1398" height="242" key="GridCell.Tab.0.left/0.25.1440.805@0.25.1440.805" timestamp="1619337220907" />
     <state width="1398" height="255" key="GridCell.Tab.0.left/0.25.1440.807@0.25.1440.807" timestamp="1619297903452" />
-    <state width="1398" height="242" key="GridCell.Tab.0.right" timestamp="1619337220908">
-      <screen x="0" y="25" width="1440" height="805" />
+    <state width="1398" height="347" key="GridCell.Tab.0.right" timestamp="1619356895857">
+      <screen x="0" y="25" width="1440" height="804" />
     </state>
     <state width="1398" height="433" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1619107243936" />
     <state width="1398" height="327" key="GridCell.Tab.0.right/0.25.1440.803@0.25.1440.803" timestamp="1619188742718" />
-    <state width="1398" height="236" key="GridCell.Tab.0.right/0.25.1440.804@0.25.1440.804" timestamp="1619303280308" />
+    <state width="1398" height="347" key="GridCell.Tab.0.right/0.25.1440.804@0.25.1440.804" timestamp="1619356895857" />
     <state width="1398" height="242" key="GridCell.Tab.0.right/0.25.1440.805@0.25.1440.805" timestamp="1619337220908" />
     <state width="1398" height="255" key="GridCell.Tab.0.right/0.25.1440.807@0.25.1440.807" timestamp="1619297903453" />
-    <state width="1398" height="253" key="GridCell.Tab.1.bottom" timestamp="1619307888806">
-      <screen x="0" y="25" width="1440" height="805" />
+    <state width="1398" height="433" key="GridCell.Tab.1.bottom" timestamp="1619356119411">
+      <screen x="0" y="25" width="1440" height="804" />
     </state>
-    <state width="1398" height="253" key="GridCell.Tab.1.bottom/0.25.1440.804@0.25.1440.804" timestamp="1619303119725" />
+    <state width="1398" height="433" key="GridCell.Tab.1.bottom/0.25.1440.804@0.25.1440.804" timestamp="1619356119411" />
     <state width="1398" height="253" key="GridCell.Tab.1.bottom/0.25.1440.805@0.25.1440.805" timestamp="1619307888806" />
     <state width="1398" height="255" key="GridCell.Tab.1.bottom/0.25.1440.807@0.25.1440.807" timestamp="1619297903454" />
-    <state width="1398" height="253" key="GridCell.Tab.1.center" timestamp="1619307888806">
-      <screen x="0" y="25" width="1440" height="805" />
+    <state width="1398" height="433" key="GridCell.Tab.1.center" timestamp="1619356119410">
+      <screen x="0" y="25" width="1440" height="804" />
     </state>
-    <state width="1398" height="253" key="GridCell.Tab.1.center/0.25.1440.804@0.25.1440.804" timestamp="1619303119725" />
+    <state width="1398" height="433" key="GridCell.Tab.1.center/0.25.1440.804@0.25.1440.804" timestamp="1619356119410" />
     <state width="1398" height="253" key="GridCell.Tab.1.center/0.25.1440.805@0.25.1440.805" timestamp="1619307888806" />
     <state width="1398" height="255" key="GridCell.Tab.1.center/0.25.1440.807@0.25.1440.807" timestamp="1619297903454" />
-    <state width="1398" height="253" key="GridCell.Tab.1.left" timestamp="1619307888806">
-      <screen x="0" y="25" width="1440" height="805" />
+    <state width="1398" height="433" key="GridCell.Tab.1.left" timestamp="1619356119410">
+      <screen x="0" y="25" width="1440" height="804" />
     </state>
-    <state width="1398" height="253" key="GridCell.Tab.1.left/0.25.1440.804@0.25.1440.804" timestamp="1619303119724" />
+    <state width="1398" height="433" key="GridCell.Tab.1.left/0.25.1440.804@0.25.1440.804" timestamp="1619356119410" />
     <state width="1398" height="253" key="GridCell.Tab.1.left/0.25.1440.805@0.25.1440.805" timestamp="1619307888806" />
     <state width="1398" height="255" key="GridCell.Tab.1.left/0.25.1440.807@0.25.1440.807" timestamp="1619297903453" />
-    <state width="1398" height="253" key="GridCell.Tab.1.right" timestamp="1619307888806">
-      <screen x="0" y="25" width="1440" height="805" />
+    <state width="1398" height="433" key="GridCell.Tab.1.right" timestamp="1619356119411">
+      <screen x="0" y="25" width="1440" height="804" />
     </state>
-    <state width="1398" height="253" key="GridCell.Tab.1.right/0.25.1440.804@0.25.1440.804" timestamp="1619303119725" />
+    <state width="1398" height="433" key="GridCell.Tab.1.right/0.25.1440.804@0.25.1440.804" timestamp="1619356119411" />
     <state width="1398" height="253" key="GridCell.Tab.1.right/0.25.1440.805@0.25.1440.805" timestamp="1619307888806" />
     <state width="1398" height="255" key="GridCell.Tab.1.right/0.25.1440.807@0.25.1440.807" timestamp="1619297903454" />
     <state x="208" y="25" key="SettingsEditor" timestamp="1619182058783">
@@ -387,7 +388,51 @@
     </state>
     <state x="386" y="154" width="670" height="676" key="search.everywhere.popup/0.25.1440.805@0.25.1440.805" timestamp="1619202350670" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ru/codebattle/client/bot/algorithms/PathConstructor.java</url>
+          <line>25</line>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ru/codebattle/client/bot/algorithms/PathConstructor.java</url>
+          <line>26</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ru/codebattle/client/bot/algorithms/PathConstructor.java</url>
+          <line>27</line>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ru/codebattle/client/bot/algorithms/PathConstructor.java</url>
+          <line>30</line>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ru/codebattle/client/bot/algorithms/PathConstructor.java</url>
+          <line>33</line>
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ru/codebattle/client/bot/algorithms/PathConstructor.java</url>
+          <line>36</line>
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ru/codebattle/client/bot/algorithms/PathConstructor.java</url>
+          <line>42</line>
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/loderunner_client$Main.ic" NAME="Main Coverage Results" MODIFIED="1619350834244" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>ru.codebattle.client.*</FILTER>
+    </SUITE>
     <SUITE FILE_PATH="coverage/loderunner_client$AStarSearchTest_cunstructPath.ic" NAME="AStarSearchTest.cunstructPath Coverage Results" MODIFIED="1619300019225" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

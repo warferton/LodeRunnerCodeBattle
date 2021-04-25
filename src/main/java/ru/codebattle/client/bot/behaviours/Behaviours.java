@@ -6,6 +6,7 @@ import ru.codebattle.client.api.LoderunnerAction;
 import ru.codebattle.client.bot.trackers.EnemyTracker;
 
 import java.util.Arrays;
+import java.util.LinkedList;
 import java.util.List;
 
 import static ru.codebattle.client.api.BoardElement.*;
@@ -34,41 +35,48 @@ public class Behaviours {
 
 
     // Behaviour if enemy is in-front
-    public LoderunnerAction enemyInFrontDrill(BoardElement myCurDirection){
-
+    public LinkedList<LoderunnerAction> enemyInFrontDrill(BoardElement myCurDirection){
+        LinkedList<LoderunnerAction> actions = new LinkedList<>() ;
         // Hero is pointed to the left
         if(HERO_STATES_LEFT.contains(myCurDirection)){
-            return DRILL_LEFT;
+            actions.push(DRILL_LEFT);
+            actions.push(GO_RIGHT);
+            return actions;
         }
         // Hero is pointed to the right
         else if(HERO_STATES_RIGHT.contains(myCurDirection)){
-            return DRILL_RIGHT;
+            actions.push(DRILL_RIGHT);
+            actions.push(GO_LEFT);
+            return actions;
         }
-        //TODO: Hero is Falling or on a Ladder
-        else{}
 
-        return GO_UP;
+        actions.push(GO_DOWN);
+        return actions;
     }
 
     // Behaviour if enemy is in-front
-    public LoderunnerAction enemyBehindDrill(BoardElement myCurDirection){
-
+    public LinkedList<LoderunnerAction> enemyBehindDrill(BoardElement myCurDirection){
+        LinkedList<LoderunnerAction> actions = new LinkedList<>() ;
         // Hero is pointed to the left
         if(HERO_STATES_LEFT.contains(myCurDirection)){
-            return DRILL_RIGHT;
+            actions.push(DRILL_LEFT);
+            actions.push(GO_RIGHT);
+            return actions;
+
         }
         // Hero is pointed to the right
         else if(HERO_STATES_RIGHT.contains(myCurDirection)){
-            return DRILL_LEFT;
+            actions.push(DRILL_RIGHT);
+            actions.push(GO_LEFT);
+            return actions;
         }
-        //TODO: Hero is Falling or on a Ladder
-        else{}
 
-        return GO_DOWN;
+        actions.push(GO_DOWN);
+        return actions;
     }
 
     // Behaviour if enemy is in-front
-    public LoderunnerAction heroSandwichedDrill(List<BoardPoint> enemy_pos,
+    public LinkedList<LoderunnerAction> heroSandwichedDrill(List<BoardPoint> enemy_pos,
                                                 BoardPoint myCurPos,
                                                 BoardElement myCurDirection){
 
@@ -79,6 +87,45 @@ public class Behaviours {
             return enemyInFrontDrill(myCurDirection);
 
     }
+    // Behaviour if hero is in-front
+    public LinkedList<LoderunnerAction> heroInFrontDrill(BoardElement myCurDirection){
+        LinkedList<LoderunnerAction> actions = new LinkedList<>() ;
+        // Hero is pointed to the left
+        if(HERO_STATES_LEFT.contains(myCurDirection)){
+            actions.push(GO_RIGHT);
+            actions.push(DRILL_LEFT);
+            return actions;
+        }
+        // Hero is pointed to the right
+        else if(HERO_STATES_RIGHT.contains(myCurDirection)){
+            actions.push(GO_LEFT);
+            actions.push(DRILL_RIGHT);
+            return actions;
+        }
+
+        actions.push(GO_UP);
+        return actions;
+    }
+
+    // Behaviour if hero is in-front
+    public LinkedList<LoderunnerAction> heroBehindDrill(BoardElement myCurDirection){
+        LinkedList<LoderunnerAction> actions = new LinkedList<>() ;
+        // Hero is pointed to the left
+        if(HERO_STATES_LEFT.contains(myCurDirection)){
+            actions.push(DRILL_LEFT);
+            actions.push(GO_RIGHT);
+            return actions;
+        }
+        // Hero is pointed to the right
+        else if(HERO_STATES_RIGHT.contains(myCurDirection)){
+            actions.push(DRILL_RIGHT);
+            actions.push(GO_LEFT);
+            return actions;
+        }
+        actions.push(GO_DOWN);
+        return actions;
+    }
+
 }
 
 /*

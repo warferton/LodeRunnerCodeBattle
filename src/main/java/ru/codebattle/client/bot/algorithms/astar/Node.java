@@ -2,6 +2,7 @@ package ru.codebattle.client.bot.algorithms.astar;
 
 import lombok.Getter;
 import lombok.Setter;
+import ru.codebattle.client.api.BoardElement;
 import ru.codebattle.client.api.BoardPoint;
 import ru.codebattle.client.api.GameBoard;
 
@@ -39,7 +40,7 @@ public class Node extends BoardPoint {
     }
 
 
-    public float getFinalCost() {
+    public long getFinalCost() {
         return g + heuristic;
     }
 
@@ -91,11 +92,13 @@ public class Node extends BoardPoint {
         Node left = shiftLeft();
         Node bottom = shiftBottom();
         Node right = shiftRight();
-        list.add(left);
-        list.add(right);
-        if (gameBoard.hasLadderAt(bottom))
+        if(left.getWeight() < 10)
+            list.add(left);
+        if(right.getWeight() < 10)
+            list.add(right);
+        if(bottom.getWeight() < 10)
             list.add(bottom);
-        if (gameBoard.hasLadderAt(top))
+        if(top.getWeight() < 10)
             list.add(top);
 
 

@@ -15,63 +15,63 @@ import static org.junit.jupiter.api.Assertions.*;
 class AStarSearchTest {
     GameBoard gameBoard = new GameBoard(
             "☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼\n" +
-                    "☼    (    $@            $ $   ~~~~~~~~~      & &  ~~~~~~~☼\n" +
-                    "☼##H########################H#H       H##########H     &$☼\n" +
-                    "☼  H $     &   @   & &(     H######H  H      &   H#☼☼☼☼☼#☼\n" +
-                    "☼H☼☼#☼☼H   $H#########U     H# &&  H#####H#####H## $~~~~~☼\n" +
-                    "☼H   &$H    H &&&   & H#####H#  && H ~  ⊐H    @H  ~~     ☼\n" +
-                    "☼H#☼#☼#H   &H         H  ~~~ #####H#     H     H     ~( (☼\n" +
-                    "☼H  ~  H~~~ЄH~~~~Є~ ( H        &  H   H######H##      ЄЄ(☼\n" +
-                    "☼H     H $  H  $ (H###☼☼☼☼☼☼H☼    H~~~H  »   H          #☼\n" +
-                    "☼H(  ( H    H#####H         H    «H      H#########H     ☼\n" +
-                    "☼☼###☼##☼##☼H  &      H###H##    H##     H#&      ##    (☼\n" +
-                    "☼☼###☼~~~~  H &       H   H######H######### H###H #####H#☼\n" +// Found this one
-                    "☼☼(((☼      H ) ~~~~Є~H   H      H       «  H# #H      H ☼\n" +//other enemy
-                    "☼########H###☼☼☼☼     H  ############   ###### ##########☼\n" +
-                    "☼                          ►     &              @       &☼\n" + //TODO : !PLAYER POSITION!
-                    "☼Q##########################H########~Є~####H############☼\n" +// other enemy on ladder
-                    "☼H                 ~~~      H (  $ $  &     H           &☼\n" +
-                    "☼#######H#######   (&       H###~~~~     &############H  ☼\n" +
-                    "☼ &  &@@H~~~~~~~~~~(   (    H             $         & H  ☼\n" +
-                    "☼    &  H$&  ##H   #######H##########~~Є~~~~H######## H  ☼\n" +
-                    "☼       H  $&##H()(     & H&     $    (     H      &  H  ☼\n" +
-                    "☼##H#####    ########H#######~~~~  ~~~#########~~~~~  H  ☼\n" +
-                    "☼  H                 H  && $                   (  ~~~~H  ☼\n" +
-                    "☼######## H##########H   @    #☼☼☼☼☼☼#   ☼☼☼☼☼☼☼     &H  ☼\n" +
-                    "☼(    &   H & @ $   $H        ~(&    ~     &   @  (   H  ☼\n" +
-                    "☼☼☼      )H~~~~~~~~~~H     &  &######   ###########   H  ☼\n" +
-                    "☼    H######         #######H           ~~~~~~~~~~~~~~H  ☼\n" +
-                    "☼H☼  H          »(          H  H####H ((         &    H  ☼\n" +
-                    "☼H☼☼#☼☼☼☼☼☼☼☼☼☼☼☼###☼☼☼☼☼☼☼☼H☼☼☼☼☼☼☼☼#☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼#☼\n" +
-                    "☼H            ~~H~~~~☼☼☼☼☼☼☼H☼☼☼☼☼☼☼&      H   ~~~~~~~~~H☼\n" +
-                    "☼Q~~~~  ######  H         H☼H☼H&       ####H  ☼  @      H☼\n" +
-                    "☼H          $   ##H#######H☼H☼H######H    $###☼☼☼☼☼☼☼☼&~H☼\n" +
-                    "☼H#########       H    ~~~H☼H☼H~~~   H~~~~~ ##    ((  ~ H☼\n" +
-                    "☼H &&$$   ###H####H##H     ☼H☼  &    H   & ###☼☼☼☼☼☼ ~  H☼\n" +
-                    "☼H       $   H&     #######☼H☼#####  H#####  &~~~~~~~ ~ H☼\n" +
-                    "☼~~~~~~~~~~~~H@  &   H~~~~~☼H☼~~~~~  H             ~ ~  H☼\n" +
-                    "☼ & @ H          «   H( (  ☼H☼     ##########H    ( &   H☼\n" +
-                    "☼ ###⊏####X########H H#####☼H☼(          &&  H ######## H☼\n" +
-                    "☼H  $  $& &        H((     ☼H☼#######        H          H☼\n" +
-                    "☼H#####     ((  H##H#### ()             ###H#########   H☼\n" +
-                    "☼H  &   H######### H$& ############        H         (( H☼\n" +
-                    "☼H##    H  &       H~~~~~~&          (     H #######H## H☼\n" +
-                    "☼~~~~#####H#   ~Є~~H $       ########H     H & &    H & H☼\n" +
-                    "☼$@$      H        H      ~~~~~~~~   H     H(       H   H☼\n" +
-                    "☼   ########H    ######H##        ##############    H   H☼\n" +
-                    "☼           H        $ H   (  & ~~~~~ &$  $     ##H#####H☼\n" +
-                    "☼H    ###########H     Q#####H &⌊  $(  H##H  @    H    $H☼\n" +
-                    "☼H###            H     H    @####*######$ ##H###& H     H☼\n" +
-                    "☼H& ######  ##H######  H      @             H   ##H###  H☼\n" +
-                    "☼H   (        H(~~~Є~##H###H  «  #########H##   @    $  H☼\n" +
-                    "☼   (H########H#    &  H   ######         H             H☼\n" +
-                    "☼ ###H        H    (    ~~~~~H @    ##H###H####H###  @  H☼\n" +
-                    "☼    H########H#########  &  H        H   @ &  H        H☼\n" +
-                    "☼H   H           &           H   (    H(    &  H     $$ H☼\n" +
-                    "☼H  ####H######   (    (#####H########H##      H#####   H☼\n" +
-                    "☼H      H  (   H#######U                       H   &    H☼\n" +
+                    "☼)            ⊛    ⊛    (( $  ~~~~~~~~~ &    (S&$&~~~~~~~☼\n" +
+                    "☼##H########################H#U    & SH##########H@      ☼\n" +
+                    "☼ )H(               (   &&  H######H ⊛H &        H#☼☼☼☼☼#☼\n" +
+                    "☼H☼☼#☼☼HS   H#########H    SH#&S& &H#####H#####H## S~~~~~☼\n" +
+                    "☼H     H    H   $$    H#####H#     H ~   H     H  ~~&&@  ☼\n" +
+                    "☼H#☼#☼#H    H   &⊛@   H  ~~~ ###1#H#     H&  & H &S ~Є   ☼\n" +
+                    "☼H  ~  H~Є~~H~~~~~~   H (      $  H   H######H##  @⊛  ~~(☼\n" +
+                    "☼H     H    H     ⋕###☼☼☼☼☼☼H☼    H~~~H   ( ⊛H   (      #☼\n" +
+                    "☼H     H    H#####H         H  S  H      H#########H &  @☼\n" +
+                    "☼☼###☼##☼##☼H         H###H##  ( H## ⊛   H# (     ##     ☼\n" +
+                    "☼☼###☼~~~~  H  ⊛$ &  $H   H######H######### H###H(#####H#☼\n" +
+                    "☼☼$»&☼R     H)  ~~~~~~H   H      H          U# #H(    (H ☼\n" +
+                    "☼########H###☼☼☼☼     H  ############  &###### ##########☼\n" +
+                    "☼    &   H            H                                  ☼\n" +
+                    "☼H##########################H########~~~####H############☼\n" +
+                    "☼⋕                $~~~$   $ Q             & H            ☼\n" +
+                    "☼#######H####### &       &  H###~~~~⊛     ############H  ☼\n" +
+                    "☼&      H~~~~~~~~~~         H                         H  ☼\n" +
+                    "☼@   $  H    ##H   #######H##########~~~~~~~H######## H  ☼\n" +
+                    "☼(      H    ##H          H                 H   &     H  ☼\n" +
+                    "☼##H#####    ########H#######~~~~  ~~~4########~~~~~  H @☼\n" +
+                    "☼( H           ⊛     H    &  ⊛                    ~~~~H  ☼\n" +
+                    "☼#########H##########H   &S   #☼☼☼☼☼☼#   ☼☼☼☼☼☼☼      H S☼\n" +
+                    "☼ (&  &   H $   S    H    & & ~(    @~                H  ☼\n" +
+                    "☼☼☼$      H~~~~~~~~~~H   (     ######  ⊏###########   H  ☼\n" +
+                    "☼    H######         #######H⊛          Є~~~~~~~~~~~~~H  ☼\n" +
+                    "☼H☼  H                      H  H####H )   ⊛⊛          H  ☼\n" +
+                    "☼H☼☼#☼☼☼☼☼☼☼☼☼☼☼☼###☼☼☼☼☼☼☼☼U☼☼☼☼☼☼☼☼#☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼#☼\n" +
+                    "☼H &  &       ~~H~~~~☼☼☼☼☼☼☼H☼☼☼☼☼☼☼$      H   ~~~~~~~~~H☼\n" +
+                    "☼H~~~~  ######  H       ⊛ H☼H☼H        ####H  ☼⊛        H☼\n" +
+                    "☼H($  (         ##H#######H☼H☼H######H     ###☼☼☼☼☼☼☼☼ ~H☼\n" +
+                    "☼H#########       H    ~~~H☼H☼H~~~   H~~~~~ ##  ))    ~ H☼\n" +
+                    "☼HS       ###H####H##H   ()☼H☼       H     ###☼☼☼☼☼☼ ~  H☼\n" +
+                    "☼H@          H      #######☼H☼#####  H#####   ~~~~~~~ ~ H☼\n" +
+                    "☼~~~~~~~~~~~~H &     H~~~~~☼H☼~~~~~  H             ~ ~ SH☼\n" +
+                    "☼     H              H  ⊛  ☼H☼     #####3####H   S      H☼\n" +
+                    "☼(### #############H H#####☼H☼               H ######## H☼\n" +
+                    "☼U                 H     S ☼H☼#######        H       $  H☼\n" +
+                    "☼H#####      ⊛  H##H####   »            ###H#########   H☼\n" +
+                    "☼H   S  H######### H   ############    ⊐   H            H☼\n" +
+                    "☼H##    H       $  H~~~~~~           (     H #######H## H☼\n" +
+                    "☼~~~~#####H#   ~~~~H      ⊛  ########H $   H        H   H☼\n" +
+                    "☼         HS       H      ~~~~~~~~   H     H        H   H☼\n" +
+                    "☼&  ########H    ######H##        ##############   ⊛H   H☼\n" +
+                    "☼(     ⊛    H      &S  H    ⊛   ~~~~~           ##H#####H☼\n" +
+                    "☼H    ###########H     H#####H         H##H       H &   H☼\n" +
+                    "☼H###            H     H     ###########  ##H###  H    ⊛H☼\n" +
+                    "☼H  ######  ##H######  Q              ⌋   ⋊ H   ##H###  H☼\n" +
+                    "☼H S      @   H ~~~~~##H###H⊛    #########H##    &  S   H☼\n" +
+                    "☼    H########H#       H   ######   ⊛     H  (          H☼\n" +
+                    "☼ ###H        H         ~~~~~H      ##H###H####H###     H☼\n" +
+                    "☼    H########H#########     H      ⊛&H ⊛  ⊛   H        H☼\n" +
+                    "☼H   H                       H        H        H(       H☼\n" +
+                    "☼H  ####H######     »   #####H########H##     $H#####   H☼\n" +
+                    "☼H      H      H#######H             ⊛   ⊛ (   H      ( H☼\n" +
                     "☼##############H       H#################################☼\n" +
-                    "☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼\n");
+                    "☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼☼");
 
     Node myCurPos = new Node(gameBoard.getMyPosition(), gameBoard);
     private GoldTracker gt = new GoldTracker();
@@ -82,7 +82,7 @@ class AStarSearchTest {
 //TODO: debug the Down Ladders !!!
     // About 0.2 - 0.5 sec
     @Test
-    void testCunstructPath() {
+    void testConstructPath() {
         System.out.println(gold_list.toString());
         System.out.println("Actual GoldBag: " + end.toString());
         System.out.println("Initial Position: " + myCurPos.toString());
@@ -108,20 +108,16 @@ class AStarSearchTest {
         System.out.println("Initial Position: " + myCurPos.toString());
         LinkedList<Node> path = AStarSearch.findPath(gameBoard,myCurPos, end);
         long start = System.currentTimeMillis();
-        LoderunnerAction[] commands = PathConstructor.createPath(myCurPos, path);
+        LinkedList<LoderunnerAction> commands = PathConstructor.createPath(myCurPos, path);
         long time = System.currentTimeMillis() - start;
-        for(LoderunnerAction a : commands){
-            System.out.println(a.toString());
-        }
+        System.out.println(commands.toString());
         System.out.println("Time Elapsed : " + (float)time/1000);
         System.out.println("Actual GoldBag: " + end2.toString());
         LinkedList<Node> path2 = AStarSearch.findPath(gameBoard, myCurPos, end2);
         long start2 = System.currentTimeMillis();
-        LoderunnerAction[] commands2 = PathConstructor.createPath(myCurPos, path2);
-        long time2 = System.currentTimeMillis() - start;
-        for(LoderunnerAction a : commands2){
-            System.out.println(a.toString());
-        }
+        LinkedList<LoderunnerAction> command2 = PathConstructor.createPath(myCurPos, path2);
+        long time2 = System.currentTimeMillis() - start2;
+        System.out.println(command2.toString());
         System.out.println("Time Elapsed : " + (float)time2/1000);
         System.out.println(path2);
         assertNotNull(path2);

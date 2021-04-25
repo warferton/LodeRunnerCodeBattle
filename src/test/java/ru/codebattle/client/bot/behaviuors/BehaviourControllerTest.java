@@ -6,6 +6,7 @@ import ru.codebattle.client.api.GameBoard;
 import ru.codebattle.client.api.LoderunnerAction;
 import ru.codebattle.client.bot.behaviours.BehaviourController;
 import ru.codebattle.client.bot.trackers.EnemyTracker;
+import ru.codebattle.client.bot.trackers.HeroTracker;
 
 import java.util.LinkedList;
 
@@ -74,12 +75,13 @@ public class BehaviourControllerTest {
 
     BoardPoint myCurPos = gameBoard.getMyPosition();
     EnemyTracker et = new EnemyTracker();
-    BehaviourController bc = new BehaviourController(et);
+    HeroTracker ht = new HeroTracker();
+    BehaviourController bc = new BehaviourController(et, ht);
 
     @Test
     public void testGetBehaviour(){
         long start = System.currentTimeMillis();
-        LoderunnerAction action = bc.getBehaviour(gameBoard, myCurPos, new LinkedList<>());
+        LinkedList<LoderunnerAction> action = bc.getBehaviour(gameBoard, myCurPos, new LinkedList<>());
         long time = System.currentTimeMillis() - start;
         System.out.println("Seconds elapsed: " + (float) (time / 1000));
         System.out.println(action.toString());

@@ -1,74 +1,25 @@
-´	[[33,14], [27,20], [33,16], [27,22], [24,20], [35,16], [20,17], [25,22], [31,7], [24,22], [27,25], [25,23], [33,20], [38,16], [26,1], [31,4], [32,5], [30,25], [32,4], [33,5], [32,24], [24,1], [20,5], [15,10], [14,11], [20,24], [21,3], [41,17], [15,8], [42,18], [19,3], [16,5], [43,10], [31,30], [16,24], [15,5], [12,20], [48,14], [11,20], [14,5], [10,19], [9,19], [15,3], [14,24], [9,8], [11,6], [36,29], [32,33], [7,18], [12,24], [6,18], [11,4], [5,18], [43,24], [11,3], [5,19], [26,41], [46,5], [45,3], [56,14], [2,18], [52,18], [11,1], [10,1], [6,5], [51,20], [47,24], [45,1], [5,5], [56,16], [6,24], [17,35], [12,31], [42,31], [21,40], [5,3], [20,40], [47,1], [41,33], [14,34], [51,4], [21,42], [30,45], [14,35], [28,47], [53,23], [49,27], [31,46], [21,45], [41,37], [30,48], [9,34], [45,34], [42,37], [49,30], [26,52], [6,33], [35,46], [55,2], [56,2], [5,33], [10,38], [31,51], [4,33], [38,45], [39,45], [3,33], [8,38], [11,41], [20,50], [7,38], [54,31], [4,36], [42,45], [40,47], [45,42], [4,38], [2,36], [52,36], [47,42], [4,40], [17,53], [45,46], [3,43], [42,52], [48,47], [2,43], [1,43], [54,42], [44,52], [44,53], [48,49], [2,48], [55,46], [53,49], [53,51], [53,53], [51,55], [54,53]]
-Actual GoldBag: [33,14]
-Initial Position: [27,14]
-d12:53:42.290 [Test worker] INFO  r.c.c.b.algorithms.astar.AStarSearch - PATH CONSTRUCTED: [[27,14]]
-m12:53:42.306 [Test worker] INFO  r.c.c.b.algorithms.astar.AStarSearch - PATH CONSTRUCTED: [[27,14], [26,14]]
-m12:53:42.319 [Test worker] INFO  r.c.c.b.algorithms.astar.AStarSearch - PATH CONSTRUCTED: [[27,14], [28,14]]
-v12:53:42.332 [Test worker] INFO  r.c.c.b.algorithms.astar.AStarSearch - PATH CONSTRUCTED: [[27,14], [26,14], [25,14]]
-v12:53:42.348 [Test worker] INFO  r.c.c.b.algorithms.astar.AStarSearch - PATH CONSTRUCTED: [[27,14], [28,14], [29,14]]
-12:53:42.353 [Test worker] INFO  r.c.c.b.algorithms.astar.AStarSearch - PATH CONSTRUCTED: [[27,14], [26,14], [25,14], [24,14]]
-12:53:42.359 [Test worker] INFO  r.c.c.b.algorithms.astar.AStarSearch - PATH CONSTRUCTED: [[27,14], [28,14], [29,14], [30,14]]
-à12:53:42.365 [Test worker] INFO  r.c.c.b.algorithms.astar.AStarSearch - PATH CONSTRUCTED: [[27,14], [26,14], [25,14], [24,14], [23,14]]
-à12:53:42.371 [Test worker] INFO  r.c.c.b.algorithms.astar.AStarSearch - PATH CONSTRUCTED: [[27,14], [28,14], [29,14], [30,14], [31,14]]
-ë12:53:42.376 [Test worker] INFO  r.c.c.b.algorithms.astar.AStarSearch - PATH CONSTRUCTED: [[27,14], [26,14], [25,14], [24,14], [23,14], [22,14]]
-ë12:53:42.385 [Test worker] INFO  r.c.c.b.algorithms.astar.AStarSearch - PATH CONSTRUCTED: [[27,14], [28,14], [29,14], [30,14], [31,14], [32,14]]
-Y12:53:42.386 [Test worker] INFO  r.c.c.b.algorithms.astar.AStarSearch - FOUND! : [33,14]
-ö12:53:42.386 [Test worker] INFO  r.c.c.b.algorithms.astar.AStarSearch - PATH CONSTRUCTED: [[27,14], [28,14], [29,14], [30,14], [31,14], [32,14], [33,14]]
-	GO_RIGHT
-	GO_RIGHT
-	GO_RIGHT
-	GO_RIGHT
-	GO_RIGHT
-	GO_RIGHT
-Actual GoldBag: [27,20]
-d12:53:42.391 [Test worker] INFO  r.c.c.b.algorithms.astar.AStarSearch - PATH CONSTRUCTED: [[27,14]]
-ö12:53:42.393 [Test worker] INFO  r.c.c.b.algorithms.astar.AStarSearch - PATH CONSTRUCTED: [[27,14], [26,14], [25,14], [24,14], [23,14], [22,14], [21,14]]
-£12:53:42.396 [Test worker] INFO  r.c.c.b.algorithms.astar.AStarSearch - PATH CONSTRUCTED: [[27,14], [26,14], [25,14], [24,14], [23,14], [22,14], [21,14], [20,14]]
-¨12:53:42.398 [Test worker] INFO  r.c.c.b.algorithms.astar.AStarSearch - PATH CONSTRUCTED: [[27,14], [26,14], [25,14], [24,14], [23,14], [22,14], [21,14], [20,14], [19,14]]
-µ12:53:42.403 [Test worker] INFO  r.c.c.b.algorithms.astar.AStarSearch - PATH CONSTRUCTED: [[27,14], [26,14], [25,14], [24,14], [23,14], [22,14], [21,14], [20,14], [19,14], [18,14]]
-æ12:53:42.408 [Test worker] INFO  r.c.c.b.algorithms.astar.AStarSearch - PATH CONSTRUCTED: [[27,14], [26,14], [25,14], [24,14], [23,14], [22,14], [21,14], [20,14], [19,14], [18,14], [17,14]]
-«12:53:42.421 [Test worker] INFO  r.c.c.b.algorithms.astar.AStarSearch - PATH CONSTRUCTED: [[27,14], [26,14], [25,14], [24,14], [23,14], [22,14], [21,14], [20,14], [19,14], [18,14], [17,14], [16,14]]
-–12:53:42.425 [Test worker] INFO  r.c.c.b.algorithms.astar.AStarSearch - PATH CONSTRUCTED: [[27,14], [26,14], [25,14], [24,14], [23,14], [22,14], [21,14], [20,14], [19,14], [18,14], [17,14], [16,14], [15,14]]
-Ÿ12:53:42.431 [Test worker] INFO  r.c.c.b.algorithms.astar.AStarSearch - PATH CONSTRUCTED: [[27,14], [26,14], [25,14], [24,14], [23,14], [22,14], [21,14], [20,14], [19,14], [18,14], [17,14], [16,14], [15,14], [14,14]]
-‚12:53:42.434 [Test worker] INFO  r.c.c.b.algorithms.astar.AStarSearch - PATH CONSTRUCTED: [[27,14], [26,14], [25,14], [24,14], [23,14], [22,14], [21,14], [20,14], [19,14], [18,14], [17,14], [16,14], [15,14], [14,14], [13,14]]
-Î12:53:42.437 [Test worker] INFO  r.c.c.b.algorithms.astar.AStarSearch - PATH CONSTRUCTED: [[27,14], [26,14], [25,14], [24,14], [23,14], [22,14], [21,14], [20,14], [19,14], [18,14], [17,14], [16,14], [15,14], [14,14], [13,14], [12,14]]
-Ù12:53:42.440 [Test worker] INFO  r.c.c.b.algorithms.astar.AStarSearch - PATH CONSTRUCTED: [[27,14], [26,14], [25,14], [24,14], [23,14], [22,14], [21,14], [20,14], [19,14], [18,14], [17,14], [16,14], [15,14], [14,14], [13,14], [12,14], [11,14]]
-˝12:53:42.453 [Test worker] INFO  r.c.c.b.algorithms.astar.AStarSearch - PATH CONSTRUCTED: [[27,14], [26,14], [25,14], [24,14], [23,14], [22,14], [21,14], [20,14], [19,14], [18,14], [17,14], [16,14], [15,14], [14,14], [13,14], [12,14], [11,14], [10,14]]
-Ö12:53:42.462 [Test worker] INFO  r.c.c.b.algorithms.astar.AStarSearch - PATH CONSTRUCTED: [[27,14], [26,14], [25,14], [24,14], [23,14], [22,14], [21,14], [20,14], [19,14], [18,14], [17,14], [16,14], [15,14], [14,14], [13,14], [12,14], [11,14], [10,14], [9,14]]
-ç12:53:42.470 [Test worker] INFO  r.c.c.b.algorithms.astar.AStarSearch - PATH CONSTRUCTED: [[27,14], [26,14], [25,14], [24,14], [23,14], [22,14], [21,14], [20,14], [19,14], [18,14], [17,14], [16,14], [15,14], [14,14], [13,14], [12,14], [11,14], [10,14], [9,14], [8,14]]
-ï12:53:42.473 [Test worker] INFO  r.c.c.b.algorithms.astar.AStarSearch - PATH CONSTRUCTED: [[27,14], [26,14], [25,14], [24,14], [23,14], [22,14], [21,14], [20,14], [19,14], [18,14], [17,14], [16,14], [15,14], [14,14], [13,14], [12,14], [11,14], [10,14], [9,14], [8,14], [7,14]]
-ù12:53:42.476 [Test worker] INFO  r.c.c.b.algorithms.astar.AStarSearch - PATH CONSTRUCTED: [[27,14], [26,14], [25,14], [24,14], [23,14], [22,14], [21,14], [20,14], [19,14], [18,14], [17,14], [16,14], [15,14], [14,14], [13,14], [12,14], [11,14], [10,14], [9,14], [8,14], [7,14], [6,14]]
-•12:53:42.479 [Test worker] INFO  r.c.c.b.algorithms.astar.AStarSearch - PATH CONSTRUCTED: [[27,14], [26,14], [25,14], [24,14], [23,14], [22,14], [21,14], [20,14], [19,14], [18,14], [17,14], [16,14], [15,14], [14,14], [13,14], [12,14], [11,14], [10,14], [9,14], [8,14], [7,14], [6,14], [5,14]]
-≠12:53:42.482 [Test worker] INFO  r.c.c.b.algorithms.astar.AStarSearch - PATH CONSTRUCTED: [[27,14], [26,14], [25,14], [24,14], [23,14], [22,14], [21,14], [20,14], [19,14], [18,14], [17,14], [16,14], [15,14], [14,14], [13,14], [12,14], [11,14], [10,14], [9,14], [8,14], [7,14], [6,14], [5,14], [4,14]]
-µ12:53:42.487 [Test worker] INFO  r.c.c.b.algorithms.astar.AStarSearch - PATH CONSTRUCTED: [[27,14], [26,14], [25,14], [24,14], [23,14], [22,14], [21,14], [20,14], [19,14], [18,14], [17,14], [16,14], [15,14], [14,14], [13,14], [12,14], [11,14], [10,14], [9,14], [8,14], [7,14], [6,14], [5,14], [4,14], [3,14]]
-Ω12:53:42.496 [Test worker] INFO  r.c.c.b.algorithms.astar.AStarSearch - PATH CONSTRUCTED: [[27,14], [26,14], [25,14], [24,14], [23,14], [22,14], [21,14], [20,14], [19,14], [18,14], [17,14], [16,14], [15,14], [14,14], [13,14], [12,14], [11,14], [10,14], [9,14], [8,14], [7,14], [6,14], [5,14], [4,14], [3,14], [2,14]]
-≈12:53:42.505 [Test worker] INFO  r.c.c.b.algorithms.astar.AStarSearch - PATH CONSTRUCTED: [[27,14], [26,14], [25,14], [24,14], [23,14], [22,14], [21,14], [20,14], [19,14], [18,14], [17,14], [16,14], [15,14], [14,14], [13,14], [12,14], [11,14], [10,14], [9,14], [8,14], [7,14], [6,14], [5,14], [4,14], [3,14], [2,14], [1,14]]
-V12:53:42.507 [Test worker] ERROR r.c.c.b.algorithms.astar.AStarSearch - NO PATH FOUND
-GO_LEFT
-GO_LEFT
-GO_LEFT
-GO_LEFT
-GO_LEFT
-GO_LEFT
-GO_LEFT
-GO_LEFT
-GO_LEFT
-GO_LEFT
-GO_LEFT
-GO_LEFT
-GO_LEFT
-GO_LEFT
-GO_LEFT
-GO_LEFT
-GO_LEFT
-GO_LEFT
-GO_LEFT
-GO_LEFT
-GO_LEFT
-GO_LEFT
-GO_LEFT
-GO_LEFT
-GO_LEFT
-GO_LEFT
-Time Elapsed : 0.121
+Œ[[4,12], [5,14], [2,12], [5,19], [16,11], [1,18], [6,24], [1,19], [18,11], [3,24], [21,11], [18,16], [3,25], [16,6], [17,17], [16,5], [6,29], [17,5], [12,24], [18,6], [22,16], [3,29], [3,31], [26,16], [25,17], [2,34], [24,3], [25,3], [31,7], [26,22], [25,23], [27,1], [30,4], [26,24], [15,35], [32,4], [39,13], [28,24], [34,4], [1,44], [16,41], [35,2], [42,16], [10,49], [42,6], [36,24], [40,3], [40,1], [45,6], [19,45], [36,29], [49,6], [50,7], [53,9], [48,20], [47,1], [48,1], [52,5], [56,9], [49,1], [53,5], [50,2], [54,5], [56,21], [39,42], [37,52], [53,38], [52,46], [49,49], [46,54]]
+Actual GoldBag: [4,12]
+Initial Position: [6,12]
+c18:18:40.645 [Test worker] INFO  r.c.c.b.algorithms.astar.AStarSearch - PATH CONSTRUCTED: [[6,12]]
+k18:18:40.650 [Test worker] INFO  r.c.c.b.algorithms.astar.AStarSearch - PATH CONSTRUCTED: [[6,12], [6,11]]
+s18:18:40.651 [Test worker] INFO  r.c.c.b.algorithms.astar.AStarSearch - PATH CONSTRUCTED: [[6,12], [6,11], [7,11]]
+{18:18:40.652 [Test worker] INFO  r.c.c.b.algorithms.astar.AStarSearch - PATH CONSTRUCTED: [[6,12], [6,11], [7,11], [8,11]]
+É18:18:40.652 [Test worker] INFO  r.c.c.b.algorithms.astar.AStarSearch - PATH CONSTRUCTED: [[6,12], [6,11], [7,11], [8,11], [9,11]]
+^18:18:40.652 [Test worker] ERROR r.c.c.b.algorithms.astar.AStarSearch - NO CORRECT PATH FOUND
+}18:18:40.654 [Test worker] INFO  r.c.c.b.algorithms.astar.AStarSearch - Final Path: [[6,12], [6,11], [7,11], [8,11], [9,11]]
+}18:18:40.655 [Test worker] INFO  r.c.c.bot.algorithms.PathConstructor - Commands input:[GO_UP, GO_RIGHT, GO_RIGHT, GO_RIGHT]
+&[GO_UP, GO_RIGHT, GO_RIGHT, GO_RIGHT]
+Time Elapsed : 0.001
+Actual GoldBag: [5,14]
+c18:18:40.661 [Test worker] INFO  r.c.c.b.algorithms.astar.AStarSearch - PATH CONSTRUCTED: [[6,12]]
+k18:18:40.662 [Test worker] INFO  r.c.c.b.algorithms.astar.AStarSearch - PATH CONSTRUCTED: [[6,12], [7,12]]
+ã18:18:40.663 [Test worker] INFO  r.c.c.b.algorithms.astar.AStarSearch - PATH CONSTRUCTED: [[6,12], [6,11], [7,11], [8,11], [9,11], [9,12]]
+ì18:18:40.664 [Test worker] INFO  r.c.c.b.algorithms.astar.AStarSearch - PATH CONSTRUCTED: [[6,12], [6,11], [7,11], [8,11], [9,11], [9,12], [9,13]]
+õ18:18:40.665 [Test worker] INFO  r.c.c.b.algorithms.astar.AStarSearch - PATH CONSTRUCTED: [[6,12], [6,11], [7,11], [8,11], [9,11], [9,12], [9,13], [9,14]]
+^18:18:40.666 [Test worker] ERROR r.c.c.b.algorithms.astar.AStarSearch - NO CORRECT PATH FOUND
+ï18:18:40.667 [Test worker] INFO  r.c.c.b.algorithms.astar.AStarSearch - Final Path: [[6,12], [6,11], [7,11], [8,11], [9,11], [9,12], [9,13], [9,14]]
+õ18:18:40.667 [Test worker] INFO  r.c.c.bot.algorithms.PathConstructor - Commands input:[GO_UP, GO_RIGHT, GO_RIGHT, GO_RIGHT, GO_RIGHT, GO_RIGHT, GO_RIGHT]
+D[GO_UP, GO_RIGHT, GO_RIGHT, GO_RIGHT, GO_RIGHT, GO_RIGHT, GO_RIGHT]
+Time Elapsed : 0.0
 []

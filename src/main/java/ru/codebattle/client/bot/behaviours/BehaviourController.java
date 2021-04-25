@@ -1,5 +1,7 @@
 package ru.codebattle.client.bot.behaviours;
 
+import lombok.Getter;
+import lombok.Setter;
 import lombok.extern.slf4j.Slf4j;
 import ru.codebattle.client.api.BoardElement;
 import ru.codebattle.client.api.BoardPoint;
@@ -8,57 +10,107 @@ import ru.codebattle.client.api.LoderunnerAction;
 import ru.codebattle.client.bot.algorithms.PathConstructor;
 import ru.codebattle.client.bot.algorithms.astar.Node;
 import ru.codebattle.client.bot.trackers.EnemyTracker;
+import ru.codebattle.client.bot.trackers.HeroTracker;
 
 import java.util.LinkedList;
 import java.util.List;
 
 @Slf4j
 public class BehaviourController {
-    EnemyTracker et;
-    Behaviours behaviours;
-//    int ticCounter = 0; //??
+    private EnemyTracker et;
+    private HeroTracker ht;
+    private Behaviours behaviours;
+    @Getter
+    @Setter
+    private LinkedList<LoderunnerAction> action_list = new LinkedList<>();
 
-    public BehaviourController(EnemyTracker et) {
+    public BehaviourController(EnemyTracker et, HeroTracker ht) {
         this.et = et;
+        this.ht = ht;
         behaviours = new Behaviours(et);
     }
 
-    public LoderunnerAction getBehaviour(GameBoard gameBoard, BoardPoint myCurPos, LinkedList<Node> path) {
-        List<BoardPoint> enemy_pos_list = et.getEnemyInQuadrant(gameBoard, myCurPos, 5, 1);
-        BoardElement myCurDirecton = gameBoard.getElementAt(myCurPos);
+    public LinkedList<LoderunnerAction> getBehaviour(GameBoard gameBoard, BoardPoint myCurPos, LinkedList<Node> path) {
+        List<BoardPoint> enemy_pos_list = et.getEnemyInQuadrant(gameBoard, myCurPos, 10, 1);
+        BoardElement myCurDirection = gameBoard.getElementAt(myCurPos);
+        List<BoardPoint> hero_pos_list = ht.getHeroesInQuadrant(gameBoard, myCurPos, 3, 1);
+        if (!hero_pos_list.isEmpty()) {
+            //get closest
+            int STATUS_CODE = ht.getHeroPositioning(hero_pos_list, myCurPos);
+            switch (STATUS_CODE) {
+                case 0:
+                    log.info("Hero In-front!");
+                    if(gameBoard.hasElementAt(myCurPos.shiftBottom(), BoardElement.BRICK)){
+                        action_list.addAll(0, behaviours.heroInFrontDrill(myCurDirection));
+                        return action_list;
+                    }
+                    break;
 
+                case 1:
+                    log.info("Hero Behind!");
+                    if(gameBoard.hasElementAt(myCurPos.shiftBottom(), BoardElement.BRICK)){
+                        action_list.addAll(0, behaviours.heroBehindDrill(myCurDirection));
+                        return action_list;
+                    }
+                    break;
+
+                case 2:
+                    log.info("I'm Sandwiched!");
+                    if(gameBoard.hasElementAt(myCurPos.shiftBottom(), BoardElement.BRICK)){
+                        action_list.addAll(0,behaviours.heroSandwichedDrill(
+                                enemy_pos_list,
+                                myCurPos,
+                                myCurDirection
+                        ));
+                        return action_list;
+                    }
+                    break;
+
+            }
+        }
         // mo eme,ies near
         if (enemy_pos_list.isEmpty()) {
             log.info("Good to Go!");
-            return PathConstructor.createPath(myCurPos, path)[0];
+            if (action_list.peek() == null|| path.peek() != myCurPos) {
+                setAction_list(PathConstructor.createPath(myCurPos, path));
+            }
+            return action_list;
         }
 
         //get enemy positioning respective to the hero
         int STATUS_CODE = et.getEnemyPositioning(enemy_pos_list, myCurPos);
 
-        // hero is sandwiched
+        action_list.clear();
         switch (STATUS_CODE) {
-            case 0 :    log.info("Enemy In-front!");
-                        return behaviours.enemyInFrontDrill(myCurDirecton);
+            case 0:
+                log.info("Enemy In-front!");
+                action_list.addAll(0,behaviours.enemyInFrontDrill(myCurDirection));
+                return action_list;
+            case 1:
+                log.info("Enemy Behind!");
+                action_list.addAll(0,behaviours.enemyBehindDrill(myCurDirection));
+                return action_list;
 
-            case 1 :    log.info("Enemy Behind!");
-                        return behaviours.enemyBehindDrill(myCurDirecton);
+            case 2:
+                log.info("I'm Sandwiched!");
 
-            case 2 :    log.info("I'm Sandwiched!");
-                        return behaviours.heroSandwichedDrill(
-                                enemy_pos_list,
-                                myCurPos,
-                                myCurDirecton
-                        );
+                action_list.addAll(0, behaviours.heroSandwichedDrill(
+                        enemy_pos_list,
+                        myCurPos,
+                        myCurDirection
+                ));
+                return action_list;
 
             default:
                 throw new IllegalStateException("Unexpected value: " + STATUS_CODE);
         }
 
     }
-
-
 }
+
+
+
+
 /*
  * TODO: 1. Decision
  *       Determine if enemy is on the same plane:

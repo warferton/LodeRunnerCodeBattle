@@ -1,32 +1,45 @@
 package ru.codebattle.client.bot.algorithms;
 
+import lombok.extern.slf4j.Slf4j;
 import ru.codebattle.client.api.BoardPoint;
 import ru.codebattle.client.api.LoderunnerAction;
 import ru.codebattle.client.bot.algorithms.astar.Node;
 
 import java.util.LinkedList;
 
+@Slf4j
 public abstract class PathConstructor {
 
-    public static LoderunnerAction[] createPath(BoardPoint myCurPos, LinkedList<Node> path){
+    public static LinkedList<LoderunnerAction> createPath(BoardPoint myCurPos, LinkedList<Node> path){
+
+        LinkedList<LoderunnerAction> actions = new LinkedList<>();
+
         if(path.size() < 1)
-            return new LoderunnerAction[]{LoderunnerAction.DO_NOTHING};
-        LoderunnerAction[] actions = new LoderunnerAction[path.size()-1];
-        path.poll();
-        for(int i = 0; i < actions.length; i++) {
-            Node node = path.poll();
-            if(node != null) {
-                if (node.getX() > myCurPos.getX()) {
-                    actions[i] = LoderunnerAction.GO_RIGHT;
-                } else if (node.getX() < myCurPos.getX()) {
-                    actions[i] = LoderunnerAction.GO_LEFT;
-                } else if (node.getY() > myCurPos.getY()) {
-                    actions[i] = LoderunnerAction.GO_UP;
-                } else if (node.getY() < myCurPos.getY()) {
-                    actions[i] = LoderunnerAction.GO_DOWN;
-                }
+        {
+            if(myCurPos.getX() > 28)
+                actions.push(LoderunnerAction.GO_LEFT);
+            else
+                actions.push(LoderunnerAction.GO_RIGHT);
+        }
+
+        Node node ;//= path.poll();
+        while(path.size() > 0){
+            node = path.poll();
+            if (node.getX() > myCurPos.getX()) {
+                actions.add(LoderunnerAction.GO_RIGHT);
+            }
+            else if (node.getX() < myCurPos.getX()) {
+                actions.add(LoderunnerAction.GO_LEFT);
+            }
+            else if (node.getY() < myCurPos.getY()) {
+                actions.add(LoderunnerAction.GO_UP);
+            }
+            else if (node.getY() > myCurPos.getY()) {
+                actions.add(LoderunnerAction.GO_DOWN);
             }
         }
+        log.info("Commands input:" + actions);
+
         return actions;
     }
 }
